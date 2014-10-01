@@ -1,0 +1,22 @@
+.page-header{
+	text-align: center;
+	text-transform: uppercase;
+	margin:2em;
+	h1,h2,h3 {
+		letter-spacing: 0.125em;
+		color:$red-main;
+
+	}
+	&.inverse{
+		h1,h2,h3 {
+			color:#fff;
+		}
+	}
+}
+
+
+
+.wrapper-page {
+	padding-top: 2em;
+	padding-bottom: 6em;
+}

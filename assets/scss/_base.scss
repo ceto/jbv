@@ -11,9 +11,9 @@
 
 html,
 body {
-  font-family: $serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: $panefresco;
+  font-size: 14px;
+  line-height: 1.4;
   font-weight: normal;
   text-rendering: optimizeLegibility;
   color: $gray-text;
@@ -22,7 +22,7 @@ body {
 }
 
 a {
-  color: $blue-header;
+  color: $gray-light;
   text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ a:focus {
   //color: $gray-text;
 }
 
-p,span {
+p {
   /* -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto; */
@@ -45,7 +45,19 @@ p,span {
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: $sans-serif;
+  font-family: $panefresco;
+  font-weight: 900;
+  margin-bottom:0.25em;
+  margin-top: 1.5em;
+  letter-spacing: -0.0333em;
+  color:$gray-heading;
+  & + p, & + ul, & + ol {
+    margin-top: 0;
+  }
+}
+
+h2 {
+  font-size: 1.5em;
 }
 
 html[data-useragent*='Chrome'][data-platform*='Mac'] p {

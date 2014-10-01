@@ -1,0 +1,93 @@
+.home--redblock{
+	font-family: $sans-serif;
+	background-color: $red-main;
+	color:#fff;
+
+
+	h2 {
+		text-transform: uppercase;
+		color:#fff;
+		font-size: 1.333em;
+		margin-top: 3em;
+		margin-bottom: 1em;
+	}
+
+	a {
+		color:#fff;
+		&:hover, &:focus {
+			color: $gray-light;
+			text-decoration: none;
+		}
+	}
+}
+	
+	.home--redblock--left, .home--redblock--right {
+		padding:0 12px;
+		@include bp($s2){
+			padding:2em 24px;
+		}
+		@include bp($s3){
+			//padding:2em 36px;
+		}
+		@include bp($s4){
+			padding:2em 48px;
+		}		
+	}
+
+	.home--redblock--left {
+		@include bp($s2){
+			float:left;
+			width:50%;
+		}
+	}
+	.home--redblock--right {
+		@include bp($s2){
+			float:right;
+			width:50%;
+		}
+		
+	}
+
+
+
+
+
+
+.home--mapblock {
+	font-family: $sans-serif;
+	border-bottom: 5px solid $red-main;
+	background-color: #fff;
+}
+
+	.home--mapblock--text{
+		padding:2em 12px;
+		@include bp($s2){
+			padding:2em 24px 4em;
+			float:left;
+			width:50%;
+		}
+		@include bp($s3){
+			width:400px;
+		}
+
+		h2 {
+			text-transform: uppercase;
+			color:$red-main;
+			font-size: 1.333em;
+			margin-top: 3em;
+			margin-bottom: 1em;
+		}
+	}
+
+
+.home--bilderblock {
+	color:$red-main;
+}
+
+
+
+
+.home--chooserblock {
+	color:#fff;
+	background-color: $red-main;
+}
