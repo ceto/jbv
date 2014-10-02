@@ -27,6 +27,14 @@
 				border-color: #fff;
 				text-decoration: none;
 			}
+			
+			.onred & {
+				color:$red-main;
+				&:hover, &:focus {
+					border-color: $red-main;
+				}
+			}
+
 
 			@include bp($s2){
 				display: inline-block;
@@ -34,4 +42,11 @@
 			}
 		}
 	}
+
+
+
+
+
+
 }
+

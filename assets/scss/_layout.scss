@@ -1,5 +1,6 @@
 .wrapper {
 	@include clearfix();
+	position: relative;
 	margin:0 auto;
 	width:100%;
 }

@@ -1,4 +1,4 @@
-<aside class="footer--contactblock">
+<aside id="contactblock" class="footer--contactblock">
 	<div class="wrapper wrapper-extranarrow">
 		<div class="page-header">
 		  <h2>Meld din interesse</h2>

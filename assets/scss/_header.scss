@@ -8,19 +8,82 @@
 	line-height: 1;
 	padding:0.333em 0;
 	&:hover, &:focus {
-		color: $gray-light;
+		color: #000;
 		text-decoration: none;
 	}
+
+	.onred &{
+		color:$red-main;
+		&:hover, &:focus {
+			color: #000;
+		}
+	}
+
 	@include bp($s2){
 		float:left;
 	}
 }
 .navbar {
-	background-color: $red-main;
+	
 	color:#fff;
-	.wrapper-wide{
-		padding-top:1em;
-		padding-bottom: 1em;
+	
+	@include bp($s2) {
+		position: fixed;
+		top:0;
+		left:0;
+		width:100%;
+		z-index:10;
 	}
+	&.onwhite {
+		background-color: rgba($red-main,1);
+	}
+	&.onred {
+		background-color: rgba(#fff,1);
+	}
+
+
+	.wrapper-wide{
+		padding-top:1.5em;
+		padding-bottom: 1.5em;
+	}
+
 }
 
+
+.page-hero {
+	background-color: $red-main;
+		
+	text-align: center;
+
+	@include bp($s2) {
+		
+	}
+
+	.wrapper {
+		min-height: 160px;
+	}
+
+	.wp-post-image {
+		display: block;
+		width:100%;
+		max-width: none;
+	}
+
+	.watermark{
+		position: absolute;
+		right:6px;
+		bottom: 12px;
+		@include bp($s2) {
+			right:24px;
+			bottom: 24px;
+		}
+		@include bp($s3) {
+			right:36px;
+			bottom: 24px;
+		}
+		@include bp($s5) {
+			right:48px;
+			bottom: 36px;
+		}
+	}
+}
