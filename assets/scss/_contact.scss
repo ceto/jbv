@@ -1,0 +1,115 @@
+.footer--contactblock {
+	font-family: $sans-serif;
+	background-color: #fff;
+	padding-bottom: 4em;
+}
+
+	.page-header {
+		h2 {
+			color:$gray-text;
+		}
+	}
+	
+	.contact--left{
+		text-align: center;
+		margin-bottom: 3em;
+		
+		@include bp($s2) {
+			float:left;
+			width:33.333%;
+			padding:24px;
+			margin-bottom: 0;
+		}
+
+		img {
+			max-width: 180px;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			letter-spacing: 0.25em;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+		a {
+			color:$gray-text;
+			&:hover,&:focus {
+				color:$red-main;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.contact--right {
+		max-width: 380px;
+		margin: 0 auto;
+		
+		@include bp($s2) {
+			max-width: none;
+
+			float:right;
+			width:66.666%;
+			padding:24px;
+		}
+	}
+
+
+
+
+.formitem {
+	margin:2em 0;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.formactions {
+	margin:2em 0;
+	text-align: center;
+}
+
+
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+	font-family: $sans-serif;
+	font-size: 14px;
+	line-height: 1;
+	color:$gray-light;
+	padding:0.75em 1em;
+	border:2px solid #000;
+	border-top: none;
+	border-right: none;
+	width:100%;
+	outline: none;
+
+	&:hover, &:focus {
+		border-color: $red-main;
+		color:$gray-text;
+	}
+}
+
+textarea {
+	line-height: 1.4;
+}
+
+.btn {
+	display: inline-block;
+	background-color: transparent;
+	color: $gray-text;
+	border:1px solid #000;
+	font-family: $panefresco;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 1;
+	letter-spacing: 0.125em;
+	padding:0.5em 1.125em;
+	text-align: center;
+
+	&:hover, &:focus {
+		border-color: $red-main;
+		color:$red-main;
+	}
+
+
+}

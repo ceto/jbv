@@ -30,6 +30,17 @@
 		}
 	}
 
+	.wrapper-extranarrow {
+		max-width:$s2;
+		padding: 0 12px;
+		@include bp($s2) {
+			padding:0 24px;
+		}
+		@include bp($s3) {
+			padding:0 36px;
+		}
+	}
+
 
 .multicolumn{
 	@include bp($s2) {
