@@ -1,0 +1,22 @@
+.thechooser{
+	background-color: $red-main;
+}
+.visual-chooser {
+	width:100%;
+	//padding-top: 42.8125%;
+	padding-top: 42.77%;
+
+	background-color: #000;
+	background-image: url(../img/chooser_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center center;
+
+}
+
+.text-chooser {
+	font-family: $sans-serif;
+	margin:4em 0;
+	color:#fff;
+	
+}

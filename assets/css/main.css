@@ -383,6 +383,7 @@ html, body {
   line-height: 1.4;
   font-weight: normal;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
   color: #3C3B3B;
   background-color: #fff;
   height: 100%; }
@@ -671,33 +672,46 @@ tbody.collapse.in {
   padding-bottom: 6em; }
 
 .home--header {
+  background-color: #fff; }
+
+.home--headhero {
   background-image: url(../img/home_head_bg.jpg);
-  background-color: #fff;
   background-repeat: no-repeat;
-  -webkit-background-size: auto 350px;
-          background-size: auto 350px;
-  background-position: center top; }
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: right center;
+  text-align: center;
+  overflow: hidden;
+  height: 300px; }
   @media only screen and (min-width: 768px) {
-    .home--header {
-      background-image: -webkit-gradient(linear, left top, right top, color-stop(24%, #A71D3E), color-stop(24%, transparent)), url(../img/home_head_bg.jpg);
-      background-image: -webkit-linear-gradient(left, #A71D3E 24%, transparent 24%), url(../img/home_head_bg.jpg);
-      background-image: -o-linear-gradient(left, #A71D3E 24%, transparent 24%), url(../img/home_head_bg.jpg);
-      background-image: linear-gradient(to right, #A71D3E 24%, transparent 24%), url(../img/home_head_bg.jpg);
-      -webkit-background-size: cover;
-              background-size: cover;
-      background-position: center center; } }
-  .home--header .wrapper-wide {
-    max-width: 1280px;
-    padding: 0 0; }
+    .home--headhero {
+      position: absolute;
+      left: 290px;
+      right: 0;
+      top: 0;
+      height: 100%; } }
+  @media only screen and (min-width: 1024px) {
+    .home--headhero {
+      left: 314px; } }
+  @media only screen and (min-width: 1280px) { }
+  @media only screen and (min-width: 1600px) {
+    .home--headhero {
+      left: 25%; } }
+  .home--headhero h1 {
+    margin: 4em auto 1em;
+    padding: 0 1em;
+    max-width: 22em;
+    color: #A71D3E;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 0.25em; }
     @media only screen and (min-width: 768px) {
-      .home--header .wrapper-wide {
-        padding: 0 0; } }
-    @media only screen and (min-width: 1024px) {
-      .home--header .wrapper-wide {
-        padding: 0 0; } }
+      .home--headhero h1 {
+        margin: 5em auto 8em;
+        font-size: 28px; } }
 
 .home--headcontact {
-  margin-top: 350px;
   font-family: 'Open Sans', serif;
   color: #fff;
   background-color: #A71D3E;
@@ -705,14 +719,15 @@ tbody.collapse.in {
   padding: 4em 24px 2em; }
   @media only screen and (min-width: 768px) {
     .home--headcontact {
-      margin-top: 0;
-      display: inline-block;
-      padding: 6em 24px 1em; } }
+      width: 290px;
+      padding: 6em 24px 2em; } }
   @media only screen and (min-width: 1024px) {
     .home--headcontact {
-      padding: 6em 36px 1em; } }
+      width: 314px;
+      padding: 6em 36px 2em; } }
   @media only screen and (min-width: 1600px) {
     .home--headcontact {
+      width: 25%;
       padding: 8em 36px 3em; } }
   .home--headcontact img {
     width: 238px; }
@@ -782,24 +797,34 @@ tbody.collapse.in {
   background-color: #fff; }
 
 #map-canvas {
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0; }
+  margin: 0;
+  padding: 0;
+  height: 300px; }
+  @media only screen and (min-width: 768px) {
+    #map-canvas {
+      position: absolute;
+      top: 0;
+      left: 340px;
+      right: 0;
+      height: 100%; } }
+  @media only screen and (min-width: 1024px) {
+    #map-canvas {
+      left: 400px; } }
+  @media only screen and (min-width: 1280px) {
+    #map-canvas {
+      left: 430px; } }
+  @media only screen and (min-width: 1600px) {
+    #map-canvas {
+      left: 25%; } }
 
 .home--mapblock--text {
   position: relative;
+  z-index: 1;
   padding: 2em 12px;
   background-color: #fff; }
   @media only screen and (min-width: 768px) {
     .home--mapblock--text {
       padding: 2em 24px 4em;
-      float: left;
       width: 340px; } }
   @media only screen and (min-width: 1024px) {
     .home--mapblock--text {
@@ -808,6 +833,10 @@ tbody.collapse.in {
   @media only screen and (min-width: 1280px) {
     .home--mapblock--text {
       width: 430px; } }
+  @media only screen and (min-width: 1600px) {
+    .home--mapblock--text {
+      width: 25%;
+      padding: 3em 48px 5em; } }
   .home--mapblock--text h2 {
     text-transform: uppercase;
     color: #A71D3E;
@@ -916,3 +945,21 @@ textarea {
       color: #fff;
       -webkit-box-shadow: inset 0 0 0 1px #fff;
               box-shadow: inset 0 0 0 1px #fff; }
+
+.thechooser {
+  background-color: #A71D3E; }
+
+.visual-chooser {
+  width: 100%;
+  padding-top: 42.77%;
+  background-color: #000;
+  background-image: url(../img/chooser_bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% auto;
+          background-size: 100% auto;
+  background-position: center center; }
+
+.text-chooser {
+  font-family: 'Open Sans', serif;
+  margin: 4em 0;
+  color: #fff; }

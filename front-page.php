@@ -1,7 +1,12 @@
 <main class="main" role="main">	
 	
 	<header class="home--header">
-		<div class="wrapper wrapper-wide">
+		<div class="wrapper wrapper-fullwidth">
+			<div class="home--headhero">
+				<h1>27 Selveierleiligheter komer for salg i oktober.</h1>
+				<img class="redlogo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo_red.png" alt="JORDBÆRVEGEN" class="watermark">
+			
+			</div>
 			<div class="home--headcontact">
 				<div class="home--headcontact--inner">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/randi_holligen.jpg" alt="Randi Holligen">
@@ -40,13 +45,15 @@
 	<section class="home--mapblock">
 		<div class="wrapper wrapper-fullwidth map-wrapper">
 			
-			<div id="map-canvas"></div>
-			
+						
 			<div class="home--mapblock--text">
 				<?php if ( $mappages->have_posts() ) : $mappages->the_post(); ?>
 					<?php the_content(); ?>
 				<?php endif; ?>
 			</div>
+
+			<div id="map-canvas"></div>
+
 
 		</div>
 	</section>
@@ -64,7 +71,18 @@
 			<div class="page-header inverse">
 			  <h2>Finn din bolig</h2>
 			</div>
-		
+			<div class="thechooser">
+				<div class="visual-chooser">
+					
+				</div>
+				<div class="wrapper wrapper-extranarrow">
+					<div class="text-chooser">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus architecto temporibus sapiente. Qui, aperiam dolore placeat. Quod, illo magnam soluta, eveniet sunt dignissimos iure veritatis, voluptates nam hic magni cupiditate.
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
