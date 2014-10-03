@@ -1,3 +1,59 @@
+.mobile-header{
+	font-family: $sans-serif;
+	//background-color: $red_main;
+	color:#fff;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	position: absolute;
+	left:0;width:100%;
+	z-index:11;
+
+	@include bp($s2) {
+		display: none;
+	}
+	
+	.navbar-brand {
+		padding:0.5em 0
+	}
+}
+
+	.nav-toggle {
+		display: inline-block;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 1;
+		border:1px solid #fff;
+		padding: 0.5em 0.25em;
+		cursor: pointer;
+		float:right;
+		&:hover, &:focus {
+			box-shadow:inset 0 0 0 1px #fff;
+		}
+	}
+	
+	input[type="checkbox"]#nav-toggle {
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+		display: none;
+		visibility: hidden;
+		opacity: 0;
+
+	  &:checked + .navbar {
+	  		height: 100%;
+			visibility:visible;
+			opacity:1;
+			background-image: url('../img/logo_kicsike.png');
+			background-repeat: no-repeat;
+			background-position: 50% 90%;
+			.navbar-brand {
+				display: none;
+			}
+		}
+	}
+
+
+
 .navbar-brand {
 	font-family: $sans-serif;
 	color:#fff;
@@ -23,24 +79,46 @@
 		float:left;
 	}
 }
+
 .navbar {
 	
 	color:#fff;
 	
+	background-color: $red-main;
+
+	position: fixed;
+	z-index:10;
+	left:0;
+	width:100%;
+
+	
+	visibility:hidden;
+	opacity:0;
+	transition: opacity 0.5s, visibility 0.5s;
+
+
+	
 	@include bp($s2) {
+		visibility: visible;
+		opacity: 1;
+		display: block;
 		position: fixed;
 		top:0;
 		left:0;
 		width:100%;
 		z-index:10;
-	}
-	&.onwhite {
-		background-color: rgba($red-main,1);
-	}
-	&.onred {
-		background-color: rgba(#fff,1);
-	}
+		background-color: transparent;
+		
+		&.onwhite {
+			background-color: rgba($red-main,1);
+		}
+		&.onred {
+			background-color: rgba(#fff,1);
+		}
 
+
+	}
+	
 
 	.wrapper-wide{
 		padding-top:1.5em;

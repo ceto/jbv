@@ -131,7 +131,7 @@
 }
 	
 	.home--redblock--left, .home--redblock--right {
-		padding:0 12px;
+		padding:0 0;
 		@include bp($s2){
 			padding:2em 24px;
 		}

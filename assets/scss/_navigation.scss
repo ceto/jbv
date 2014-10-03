@@ -1,23 +1,42 @@
 .navbar-nav {
 	list-style-type: none;
-	margin:0;
-	padding:0;
+	margin:0 0 0;
+	padding:4em 0;
+	text-align: center;
+
+
+	
+	transform: translateY(-25%) scale(0.75);
+	transition: transform 0.5s;
+
+	input[type="checkbox"]#nav-toggle:checked + .navbar & {
+		transform: translateY(0) scale(1);
+	}
+
 	@include bp($s2){
+		transform:none;
+		margin:0;
+		padding:0;
 		float:right;
 		text-align:right;
 	}
 	li {
 
+		margin:0.5em;
+
+
 		@include bp($s2){
 			display: inline-block;
+			margin:0;
 			margin-left:12px;
 		}
+
 		> a {
 			color:#fff;
 			display: inline-block;
 			font-family: $sans-serif;
 			font-weight: 700;
-			font-size: 13px;
+			font-size: 20px;
 			line-height: 1;
 			text-transform: uppercase;
 			text-align: center;
@@ -38,6 +57,7 @@
 
 			@include bp($s2){
 				display: inline-block;
+				font-size: 13px;
 
 			}
 		}
