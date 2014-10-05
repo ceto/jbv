@@ -58,10 +58,35 @@
 		</div>
 	</section>
 
+	
+	<?php 
+		$sl_args = array(
+			'post_type'   => array('slide'),
+			'ignore_sticky_posts' => true,
+			'posts_per_page'         => -1,
+		);
+		$the_slides = new WP_Query( $sl_args );
+	?>
 	<section class="home--bilderblock">
 		<div class="wrapper wrapper-fullwidth">
 			<div class="page-header"><h2>Bilder</h2></div>
-		
+				<div class="master-slider ms-skin-default" id="masterslider">
+					<?php while ( $the_slides->have_posts() ) : $the_slides->the_post(); ?>
+						<?php 
+							if (has_post_thumbnail() ) {
+								$image_id = get_post_thumbnail_id();
+								$thumb_url_array = wp_get_attachment_image_src($image_id, 'thumbnail', true);
+								$image_url_array = wp_get_attachment_image_src($image_id, 'large', true);
+								$thumb_url = $thumb_url_array[0];
+								$image_url = $image_url_array[0];
+						?>
+						<div class="ms-slide">
+		            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/vendor/masterslider/blank.gif" data-src="<?php echo $image_url; ?>" alt="<?php the_title(); ?>"/>
+		            <img src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>" class="ms-thumb"/>
+		            <div class="ms-info"><?php the_title(); ?></div>
+		        </div>
+					<?php  } endwhile; ?>	
+				</div>
 		</div>
 	</section>
 

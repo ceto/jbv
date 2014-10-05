@@ -114,13 +114,13 @@ module.exports = function(grunt) {
         }
       }
     },
-//    notify: {
-//      options: {
-//        enabled: true,
-//        max_jshint_notifications: 5, // maximum number of notifications from jshint output
-//        title: "Project Name" // defaults to the name in package.json, or will use project directory's name
-//      }
-//    },
+    notify: {
+      options: {
+        enabled: true,
+        max_jshint_notifications: 5, // maximum number of notifications from jshint output
+        title: "Project Name" // defaults to the name in package.json, or will use project directory's name
+      }
+    },
     watch: {
       sass: {
         files: [
@@ -170,6 +170,6 @@ module.exports = function(grunt) {
     'uglify',
     'modernizr',
     'version',
-//    'notify'
+    'notify'
   ]);
 };
