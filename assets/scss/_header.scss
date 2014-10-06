@@ -12,8 +12,21 @@
 		display: none;
 	}
 	
-	.navbar-brand {
-		padding:0.5em 0
+	.navbar-brand-mobile {
+
+		font-family: $sans-serif;
+		color:#fff;
+		text-transform: uppercase;
+		font-weight: 700;
+		display: inline-block;
+		font-size: 13px;
+		line-height: 1;
+		padding:0.5em 0;
+
+		&:hover, &:focus {
+			color: #000;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -55,11 +68,11 @@
 
 
 .navbar-brand {
+	display: none;
 	font-family: $sans-serif;
 	color:#fff;
 	text-transform: uppercase;
 	font-weight: 700;
-	display: inline-block;
 	font-size: 13px;
 	line-height: 1;
 	padding:0.333em 0;
@@ -76,6 +89,7 @@
 	}
 
 	@include bp($s2){
+		display: inline-block;
 		float:left;
 	}
 }

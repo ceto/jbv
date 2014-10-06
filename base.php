@@ -28,7 +28,7 @@
   
   <?php if ( is_front_page() ) : ?>
     <!-- Master Slider -->
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/vendor/masterslider/jquery.easing.min.js"></script>
+    <!-- script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/vendor/masterslider/jquery.easing.min.js"></script-->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/vendor/masterslider/masterslider.min.js"></script>
     <script>
       var slider = new MasterSlider();
@@ -47,7 +47,9 @@
       slider.control('thumblist', { 
         autohide:false,
         inset:false,
-        space:12,
+        width:160,
+        height:90,
+        space:20
 
       });
     </script>

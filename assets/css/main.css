@@ -621,8 +621,18 @@ tbody.collapse.in {
   @media only screen and (min-width: 768px) {
     .mobile-header {
       display: none; } }
-  .mobile-header .navbar-brand {
+  .mobile-header .navbar-brand-mobile {
+    font-family: 'Open Sans', serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 1;
     padding: 0.5em 0; }
+    .mobile-header .navbar-brand-mobile:hover, .mobile-header .navbar-brand-mobile:focus {
+      color: #000;
+      text-decoration: none; }
 
 .nav-toggle {
   display: inline-block;
@@ -655,11 +665,11 @@ input[type="checkbox"]#nav-toggle {
       display: none; }
 
 .navbar-brand {
+  display: none;
   font-family: 'Open Sans', serif;
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
-  display: inline-block;
   font-size: 13px;
   line-height: 1;
   padding: 0.333em 0; }
@@ -672,6 +682,7 @@ input[type="checkbox"]#nav-toggle {
       color: #000; }
   @media only screen and (min-width: 768px) {
     .navbar-brand {
+      display: inline-block;
       float: left; } }
 
 .navbar {
@@ -1142,7 +1153,6 @@ textarea {
 .ms-view {
   margin: 0px auto;
   overflow: hidden;
-  background: black;
   position: relative;
   -webkit-perspective: 2000px;
   -ms-perspective: 2000px;
@@ -1166,7 +1176,14 @@ textarea {
   position: absolute;
   z-index: 1;
   left: 24px;
-  top: 24px; }
+  bottom: 4%;
+  right: 24px;
+  font-family: 'Open Sans', serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center; }
 
 .ms-slide .ms-slide-bgcont, .ms-slide .ms-slide-bgvideocont {
   position: absolute;
@@ -1359,14 +1376,15 @@ textarea {
 .ms-thumb-list {
   overflow: hidden;
   position: relative;
-  margin: 3em 12px;
+  margin: 3em auto;
   color: #fff;
   font-family: 'Open Sans', serif;
   font-weight: 700;
   text-transform: uppercase; }
 
 .ms-thumb-list.ms-dir-h {
-  width: 100%; }
+  width: 95%;
+  max-width: 768px; }
 
 .ms-thumb-list.ms-dir-v {
   height: 100%;
@@ -1380,6 +1398,7 @@ textarea {
   height: auto; }
 
 .ms-thumb-frame {
+  padding: 0 12px 0 0;
   cursor: pointer;
   float: left;
   overflow: hidden;

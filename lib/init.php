@@ -19,6 +19,13 @@ function roots_setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
 
+  add_image_size('small169', 160, 90, true );
+  add_image_size('full169', 1920, 1080, true );
+  add_image_size('large169', 1280, 720, true );
+
+  add_filter( 'jpeg_quality', create_function( '', 'return 60;' ) );
+
+
   // Add post formats
   // http://codex.wordpress.org/Post_Formats
   add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'video', 'audio'));

@@ -1,6 +1,6 @@
 <header class="mobile-header">
     <div class="wrapper wrapper-extranarrow">
-    <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+    <a class="navbar-brand-mobile" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     <label class="nav-toggle" for="nav-toggle">MENU</label>
   </div>
 </header>
