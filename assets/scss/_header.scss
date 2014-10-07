@@ -179,3 +179,32 @@
 		}
 	}
 }
+
+
+.apartment-hero {
+	background-color: $red-main;
+	@include bp($s2) {
+	}
+
+	.wrapper {
+		min-height: 65px;
+	}
+}
+
+.page-header{
+	text-align: center;
+	text-transform: uppercase;
+	margin:2em 0;
+	h1,h2,h3 {
+		letter-spacing: 0.125em;
+		color:$red-main;
+		margin:0;
+
+	}
+	&.inverse{
+		h1,h2,h3 {
+			color:#fff;
+		}
+	}
+}
+

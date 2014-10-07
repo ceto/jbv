@@ -743,6 +743,23 @@ input[type="checkbox"]#nav-toggle {
         right: 48px;
         bottom: 36px; } }
 
+.apartment-hero {
+  background-color: #A71D3E; }
+  @media only screen and (min-width: 768px) { }
+  .apartment-hero .wrapper {
+    min-height: 65px; }
+
+.page-header {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2em 0; }
+  .page-header h1, .page-header h2, .page-header h3 {
+    letter-spacing: 0.125em;
+    color: #A71D3E;
+    margin: 0; }
+  .page-header.inverse h1, .page-header.inverse h2, .page-header.inverse h3 {
+    color: #fff; }
+
 .content-info {
   background-color: #333232;
   color: #fff;
@@ -767,17 +784,6 @@ input[type="checkbox"]#nav-toggle {
 .footer--copy {
   display: block;
   font-size: 0.875em; }
-
-.page-header {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 2em 0; }
-  .page-header h1, .page-header h2, .page-header h3 {
-    letter-spacing: 0.125em;
-    color: #A71D3E;
-    margin: 0; }
-  .page-header.inverse h1, .page-header.inverse h2, .page-header.inverse h3 {
-    color: #fff; }
 
 .wrapper-page {
   padding-top: 0;
@@ -2125,7 +2131,7 @@ img.mfp-img {
     display: table; }
   .holdit:after {
     clear: both; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 480px) {
     .holdit {
       padding: 24px; } }
   @media only screen and (min-width: 768px) {
@@ -2184,4 +2190,46 @@ img.mfp-img {
     margin-top: 0; }
 
 .apartment-discl {
-  margin-top: 3em; }
+  margin-top: 3em;
+  max-width: 480px; }
+  .apartment-discl .btn {
+    margin-top: 1.5em; }
+
+.main-object {
+  background-color: #A71D3E;
+  color: #fff; }
+  .main-object .page-header {
+    margin: 0;
+    padding: 2em 0;
+    background-color: #fff; }
+    .main-object .page-header h1, .main-object .page-header h2, .main-object .page-header h3 {
+      color: #A71D3E; }
+
+/****************** Apartment Data Row **************/
+.apartment-datatable {
+  margin: 4em 0;
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Open Sans', serif;
+  font-size: 12px;
+  line-height: 1; }
+  @media only screen and (min-width: 768px) {
+    .apartment-datatable {
+      font-size: 14px; } }
+
+.apartment-datarow {
+  display: table-row-group; }
+
+.apartment-datarow--link {
+  display: table-row;
+  color: #fff; }
+  .apartment-datarow--link:hover, .apartment-datarow--link:focus {
+    outline: 1px solid #fff;
+    text-decoration: none; }
+
+.apartment-datarow--cell {
+  display: table-cell;
+  padding: 0.5em 0.666em;
+  text-align: center;
+  vertical-align: middle; }

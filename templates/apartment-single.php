@@ -1,6 +1,5 @@
-<header class="page-hero apartment-hero">
+<header class="apartment-hero">
   <div class="wrapper wrapper-fullwidth">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo_kicsike.png" alt="JORDBÆRVEGEN" class="watermark">
   </div>
 </header>
 <div class="wrapper wrapper-fullwidth wrapper-apartment">
@@ -52,6 +51,7 @@
           </div>
           <div class="apartment-discl">
             <?php the_content(); ?>
+            <a class="btn btn-light" data-toggle="collapse" href="#contactblock">Meld din interesse</a>
           </div>
         </div>
       </div>

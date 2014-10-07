@@ -1,4 +1,4 @@
-<aside id="contactblock" class="footer--contactblock">
+<aside id="contactblock" class="footer--contactblock <?php echo is_singular('apartment')?'collapse':''; ?>">
 	<div class="wrapper wrapper-extranarrow">
 		<div class="page-header">
 		  <h2>Meld din interesse</h2>
@@ -21,7 +21,7 @@
           <input required placeholder="e-post (obligatorisk)" type="email" id="email" name="email">
         </div>
         <div class="formitem">
-          <input required placeholder="telefonnummer" type="tel" id="tel" name="tel">
+          <input placeholder="telefonnummer" type="tel" id="tel" name="tel">
         </div>
         <!-- <div class="formitem">
           <select name="subject" id="subject" name="subject">

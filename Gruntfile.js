@@ -1,9 +1,13 @@
 'use strict';
 module.exports = function(grunt) {
   // Load all tasks
-  require('load-grunt-tasks')(grunt);
+  //require('load-grunt-tasks')(grunt);
+  require('jit-grunt')(grunt);
+
   // Show elapsed time
   require('time-grunt')(grunt);
+
+
 
   var jsFileList = [
     'assets/vendor/bootstrap/js/transition.js',
@@ -38,14 +42,14 @@ module.exports = function(grunt) {
       dev: {
         options: {
           //outputStyle: 'nested',
-          //sourceMap: true
+          sourceMap: true
         },
         files: { 'assets/css/main.css': 'assets/scss/styles.scss' }
       },
       build: {
         options: {
           outputStyle: 'compressed',
-          //sourceMap: true
+          sourceMap: true
         },
         files: { 'assets/css/main.min.css': 'assets/scss/styles.scss' }
       }
@@ -72,11 +76,11 @@ module.exports = function(grunt) {
         browsers: ['last 2 versions', 'ie 8', 'ie 9', 'android 2.3', 'android 4', 'opera 12']
       },
       dev: {
-        options: {
-          map: {
-            prev: 'assets/css/'
-          }
-        },
+        //options: {
+        //  map: {
+        //    prev: 'assets/css/'
+        //  }
+        //},
         src: 'assets/css/main.css'
         //,dest: 'assets/css/main.min.css'
       },
