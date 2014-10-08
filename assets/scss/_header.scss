@@ -196,9 +196,17 @@
 	text-transform: uppercase;
 	margin:2em 0;
 	h1,h2,h3 {
+		line-height: 1.25;
 		letter-spacing: 0.125em;
 		color:$red-main;
 		margin:0;
+		span{
+			font-family: $sans-serif;
+			font-weight: 400;
+			font-size: 66.666%;
+			letter-spacing: 0;
+			display: block;
+		}
 
 	}
 	&.inverse{

@@ -19,10 +19,12 @@ function roots_setup() {
   // http://codex.wordpress.org/Function_Reference/add_image_size
   add_theme_support('post-thumbnails');
 
-  add_image_size('small169', 160, 90, true );
   add_image_size('full169', 1920, 1080, true );
   add_image_size('large169', 1280, 720, true );
-
+  add_image_size('medium169', 1024, 576, true );
+  add_image_size('small169', 480, 270, true );
+  add_image_size('tiny169', 160, 90, true );
+  
   add_filter( 'jpeg_quality', create_function( '', 'return 60;' ) );
 
 

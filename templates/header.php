@@ -1,3 +1,4 @@
+<a id="top" name="top">
 <header class="mobile-header">
     <div class="wrapper wrapper-extranarrow">
     <a class="navbar-brand-mobile" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>

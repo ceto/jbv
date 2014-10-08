@@ -75,14 +75,14 @@
 						<?php 
 							if (has_post_thumbnail() ) {
 								$image_id = get_post_thumbnail_id();
-								$thumb_url_array = wp_get_attachment_image_src($image_id, 'small169', true);
+								$thumb_url_array = wp_get_attachment_image_src($image_id, 'tiny169', true);
 								$image_url_array = wp_get_attachment_image_src($image_id, 'large169', true);
 								$thumb_url = $thumb_url_array[0];
 								$image_url = $image_url_array[0];
 						?>
 						<div class="ms-slide">
 		            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/vendor/masterslider/blank.gif" data-src="<?php echo $image_url; ?>" alt="<?php the_title(); ?>"/>
-		            <img src="<?php echo $thumb_url; ?>" alt="<?php the_title(); ?>" class="ms-thumb"/>
+		            <img src="<?php echo $thumb_url; ?>" width="160" height="90" alt="<?php the_title(); ?>" class="ms-thumb"/>
 		            <div class="ms-info"><?php the_title(); ?></div>
 		        </div>
 					<?php  } endwhile; ?>	
@@ -105,7 +105,7 @@
 				$the_buildings = get_terms('object', $builds_args );
 			?>
 			<div class="thechooser">
-				<div class="visual-chooser">
+				<div class="visual-chooser visual-chooser-starter">
 					
 				</div>
 				
@@ -114,7 +114,7 @@
 		      	<p class="datarow datatable--head">
 		          <span class="datarow--cell">Navn</span>
 		          <span class="datarow--cell">Floor</span>
-		          <span class="datarow--cell">Utsolgt/Fri</span>
+		          <span class="datarow--cell">Fri leilighets</span>
 		        </p>
 		        <?php foreach ($the_buildings as $building) { ?>
 		          <?php get_template_part('templates/building-datarow'); ?>

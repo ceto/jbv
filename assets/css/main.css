@@ -754,9 +754,16 @@ input[type="checkbox"]#nav-toggle {
   text-transform: uppercase;
   margin: 2em 0; }
   .page-header h1, .page-header h2, .page-header h3 {
+    line-height: 1.25;
     letter-spacing: 0.125em;
     color: #A71D3E;
     margin: 0; }
+    .page-header h1 span, .page-header h2 span, .page-header h3 span {
+      font-family: 'Open Sans', serif;
+      font-weight: 400;
+      font-size: 66.666%;
+      letter-spacing: 0;
+      display: block; }
   .page-header.inverse h1, .page-header.inverse h2, .page-header.inverse h3 {
     color: #fff; }
 
@@ -822,9 +829,12 @@ input[type="checkbox"]#nav-toggle {
 
 .datarow--cell {
   display: table-cell;
-  padding: 0.5em 0.666em;
+  padding: 0.5em 0.125em;
   text-align: center;
   vertical-align: middle; }
+  @media only screen and (min-width: 768px) {
+    .datarow--cell {
+      padding: 0.5em 0.666em; } }
 
 .home--header {
   background-color: #fff; }
@@ -1105,14 +1115,25 @@ textarea {
   background-color: #A71D3E; }
 
 .visual-chooser {
+  position: relative;
   width: 100%;
-  padding-top: 42.77%;
-  background-color: #000;
-  background-image: url(../img/chooser_bg.jpg);
+  padding-top: 56.25%;
+  background-color: #A71D3E;
   background-repeat: no-repeat;
   -webkit-background-size: 100% auto;
           background-size: 100% auto;
   background-position: center center; }
+  .visual-chooser.visual-chooser-starter {
+    background-image: url(../img/Arolia_Starter_CD_small.jpg); }
+    @media only screen and (min-width: 768px) {
+      .visual-chooser.visual-chooser-starter {
+        background-image: url(../img/Arolia_Starter_CD_medium.jpg); } }
+    @media only screen and (min-width: 1024px) {
+      .visual-chooser.visual-chooser-starter {
+        background-image: url(../img/Arolia_Starter_CD_large.jpg); } }
+    @media only screen and (min-width: 1280px) {
+      .visual-chooser.visual-chooser-starter {
+        background-image: url(../img/Arolia_Starter_CD_full.jpg); } }
 
 .text-chooser {
   font-family: 'Open Sans', serif;
@@ -1437,8 +1458,8 @@ textarea {
   position: relative; }
 
 .ms-thumb-frame img {
-  width: 100%;
-  height: auto; }
+  width: 160px;
+  height: 90px; }
 
 .ms-thumb-frame {
   padding: 0 12px 0 0;
