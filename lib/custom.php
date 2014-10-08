@@ -114,8 +114,8 @@ function jbv_apartment_meta( array $meta_boxes ) {
       'type' => 'radio_inline',
       'options' => array(
           array('name' => 'Fri', 'value' => 'fri',),
-          array('name' => 'Reserved', 'value' => 'reserved',),
-          array('name' => 'Utsolgt', 'value' => 'utsolgt',)
+          array('name' => 'Utsolgt', 'value' => 'utsolgt',),
+          array('name' => 'Reserved', 'value' => 'reserved',)
       )
     ),
 
@@ -243,6 +243,7 @@ if (is_admin()){
     'use_with_theme' => '/wp-content/themes/jbv/lib/TMC'          //change path if used with theme set to true, false for a plugin or anything else for a custom path(default false).
   );
   $my_meta =  new Tax_Meta_Class($config);
+  $my_meta->addText($prefix.'floors',array('name'=> __('Floors','roots')));
   $my_meta->addTextarea($prefix.'svgdata',array('name'=> __('SVG Data','roots')));
   $my_meta->addImage($prefix.'image',array('name'=> __('Image of this item ','roots')));
   //$my_meta->addWysiwyg($prefix.'content',array('name'=> __('Content editor ','tax-meta')));

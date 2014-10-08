@@ -1,12 +1,17 @@
 'use strict';
 module.exports = function(grunt) {
+
+  //grunt.loadNpmTasks('grunt-text-replace');
+  
   // Load all tasks
-  //require('load-grunt-tasks')(grunt);
-  require('jit-grunt')(grunt);
+  require('load-grunt-tasks')(grunt);
+  //require('jit-grunt')(grunt);
 
   // Show elapsed time
   require('time-grunt')(grunt);
 
+
+  
 
 
   var jsFileList = [
@@ -55,6 +60,16 @@ module.exports = function(grunt) {
       }
 
     },
+    replace: {
+      default: {
+        src: ['assets/css/*.css.map'],
+        overwrite: true,                 // overwrite matched source files
+        replacements: [{
+          from: 'assets/scss',
+          to: '../../assets/scss'
+        }]
+      }
+    },
     concat: {
       options: {
         separator: ';',
@@ -76,15 +91,15 @@ module.exports = function(grunt) {
         browsers: ['last 2 versions', 'ie 8', 'ie 9', 'android 2.3', 'android 4', 'opera 12']
       },
       dev: {
-        //options: {
-        //  map: {
-        //    prev: 'assets/css/'
-        //  }
-        //},
+        options: {
+          map: true
+        },
         src: 'assets/css/main.css'
-        //,dest: 'assets/css/main.min.css'
       },
       build: {
+        options: {
+          map: true
+        },
         src: 'assets/css/main.min.css'
       }
     },
@@ -131,7 +146,11 @@ module.exports = function(grunt) {
           'assets/scss/*.scss',
           'assets/scss/**/*.scss'
         ],
-        tasks: ['sass:dev', 'autoprefixer:dev']
+        tasks: [
+          'sass:dev', 
+          'replace',
+          'autoprefixer:dev'
+        ]
       },
       js: {
         files: [
@@ -156,6 +175,7 @@ module.exports = function(grunt) {
     }
   });
 
+
   // Register tasks
   grunt.registerTask('default', [
     'dev'
@@ -163,6 +183,7 @@ module.exports = function(grunt) {
   grunt.registerTask('dev', [
     'jshint',
     'sass:dev',
+    'replace',
     'autoprefixer:dev',
     'concat',
     'notify'
@@ -170,10 +191,12 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'jshint',
     'sass:build',
+    'replace',
     'autoprefixer:build',
     'uglify',
     'modernizr',
     'version',
     'notify'
   ]);
+
 };

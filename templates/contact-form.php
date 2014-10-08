@@ -1,3 +1,4 @@
+<?php if ( !is_archive() ) : ?>
 <aside id="contactblock" class="footer--contactblock <?php echo is_singular('apartment')?'collapse':''; ?>">
 	<div class="wrapper wrapper-extranarrow">
 		<div class="page-header">
@@ -38,7 +39,6 @@
 	      </div>
     	</form>
 		</div>
-
-		
 	</div>
 </aside>
+<?php endif; ?>

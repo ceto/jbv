@@ -96,18 +96,34 @@
 			<div class="page-header inverse">
 			  <h2>Finn din bolig</h2>
 			</div>
+			
+
+			<?php 
+				$builds_args = array(
+					'hide_empty' => false 
+				);
+				$the_buildings = get_terms('object', $builds_args );
+			?>
 			<div class="thechooser">
 				<div class="visual-chooser">
 					
 				</div>
+				
 				<div class="wrapper wrapper-extranarrow">
-					<div class="text-chooser">
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus architecto temporibus sapiente. Qui, aperiam dolore placeat. Quod, illo magnam soluta, eveniet sunt dignissimos iure veritatis, voluptates nam hic magni cupiditate.
-						</p>
-					</div>
-				</div>
+		      <div class="datatable datatable-buildins">
+		      	<p class="datarow datatable--head">
+		          <span class="datarow--cell">Navn</span>
+		          <span class="datarow--cell">Floor</span>
+		          <span class="datarow--cell">Utsolgt/Fri</span>
+		        </p>
+		        <?php foreach ($the_buildings as $building) { ?>
+		          <?php get_template_part('templates/building-datarow'); ?>
+		        <?php } ?>
+		      </div>
+		    </div>
+			
 			</div>
+
 		</div>
 	</section>
 
