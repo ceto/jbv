@@ -17,7 +17,7 @@
     </div>
     
     <div class="thechooser">
-      <style>
+      <!--style>
         .visual-chooser { background-image: url(<?php echo $imcimedium[0]; ?>); }
 
         @media only screen and (min-width: 1024px) {
@@ -27,11 +27,13 @@
         @media only screen and (min-width: 1280px) {
           .visual-chooser { background-image: url(<?php echo $imcifull[0]; ?>); }
         }
-      </style>
-      <div class="visual-chooser">
+      </style-->
+      <div id="visual-chooser" class="visual-chooser visual-chooser-starter">
+        <a class="btn btn-light" data-toggle="collapse" data-target="#detailswrapper">List apartments</a>
       </div>
 
-      <div class="wrapper wrapper-wide">
+      <div id="detailswrapper" class="wrapper wrapper-wide detailswrapper collapse">
+        <p>&nbsp;</p>
         <div class="datatable datatable-apartments">
           <p class="datarow datatable--head">
             <span class="datarow--cell">Navn</span>
@@ -44,6 +46,7 @@
             <?php get_template_part('templates/apartment-datarow'); ?>
           <?php endwhile; ?>
         </div>
+        <p>&nbsp;</p><p>&nbsp;</p>
       </div>
 
     </div>

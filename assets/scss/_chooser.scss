@@ -4,12 +4,11 @@
 .visual-chooser {
 	position:relative;
 	width:100%;
-	padding-top:56.25%;
 
 	background-color: $red_main;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	background-position: center center;
+	background-position: top center;
 	
 	&.visual-chooser-starter{
 		background-image: url(../img/Arolia_Starter_CD_small.jpg);
@@ -22,6 +21,10 @@
 		@include bp($s4) {
 			background-image: url(../img/Arolia_Starter_CD_full.jpg);
 		}
+	}
+
+	svg {
+		display: block;
 	}
 
 	.btn{

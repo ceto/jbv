@@ -8,7 +8,7 @@
 
 <input type="checkbox" id="nav-toggle">
 
-<header class="banner navbar navbar-default" role="banner">
+<header class="navbar navbar-default" role="banner">
   <div class="wrapper wrapper-wide">
     <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
     <nav class="navbar-collapse" role="navigation">

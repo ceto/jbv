@@ -63,20 +63,79 @@ $(document).ready(UTIL.loadEvents);
 })(jQuery); // Fully reference jQuery after this point.
 
 
+//********** Scroll Direction Check *************//
+var felcsoki=0;
+var lecsoki=0;
+var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel"; //FF doesn't recognize mousewheel as of FF3.x
+$(document).bind(mousewheelevt, function(e) {
+        var evt = window.event || e; //equalize event object     
+        evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
+        var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta; //check for detail first, because it is used by Opera and FF
+        if(delta > 0)
+            {
+            //console.log('Felfele');
+            if (felcsoki++ >= 2 ) {
+              lecsoki=0;
+              $('.fixedhead').addClass('show');
+              $('body').attr('data-offset','65');
+            }
+            }
+        else
+            {
+            //console.log('Lefele');
+            if (lecsoki++ > 2 ) {
+              felcsoki=0;
+              $('.fixedhead').removeClass('show');
+              $('body').attr('data-offset','0');
+            }
+            }
+    }
+);
+
+//*********** Smooth scroll *************
+
 jQuery(document).ready(function() {
+  
   $('.is_dark').waypoint(function() {
-    //alert('You have scrolled to a dark section.');
     $('.navbar').removeClass('redbg');
     $('.navbar').addClass('whitebg');
   }, { offset: 65 });
   $('.is_light').waypoint(function() {
-    //alert('You have scrolled to a light section.');
     $('.navbar').removeClass('whitebg');
     $('.navbar').addClass('redbg');
   }, { offset: 65 });
   $('.is_opaque').waypoint(function() {
-    //alert('You have scrolled to a opaque section.');
     $('.navbar').removeClass('redbg');
     $('.navbar').removeClass('whitebg');
   }, { offset: 65 });
+
+
+
+  /************* Main header Fixing ***********/
+  var htop = $('.navbar').offset().top - parseFloat($('.navbar').css('marginTop').replace(/auto/, 0));
+  $(window).scroll(function (event) {
+    var y = $(this).scrollTop();
+    if (y-3 >= htop) {
+      $('.navbar').addClass('fixedhead');
+    } else {
+      $('.navbar').removeClass('fixedhead');
+    }
+    //$('body').attr('data-offset' ,  $('.banner').height() );
+  });
+  /************* End of fixing ***********/
+
+
+
+  if ( $('.visual-chooser').length > 0 ) {
+    redraw_canvas();
+    $(window).resize(redraw_canvas);
+  }
+
 });
+
+
+
+
+
+
+

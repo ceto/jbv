@@ -94,7 +94,7 @@
 	<section class="home--chooserblock is_dark">
 		<div class="wrapper wrapper-fullwidth">
 			<div class="page-header inverse">
-			  <h2>Finn din bolig</h2>
+			  <h2>Finn din bolig<span>Hover your mouse to see details</span></h2>
 			</div>
 			
 
@@ -105,8 +105,8 @@
 				$the_buildings = get_terms('object', $builds_args );
 			?>
 			<div class="thechooser">
-				<div class="visual-chooser visual-chooser-starter">
-					<a class="btn btn-light" data-toggle="collapse" data-target="#detailswrapper">Show apartments' details</a>
+				<div id="visual-chooser" class="visual-chooser visual-chooser-starter">
+					<a class="btn btn-light" data-toggle="collapse" data-target="#detailswrapper">List apartments</a>
 				</div>
 				<div id="detailswrapper" class="wrapper wrapper-fullwidth detailswrapper collapse">
 	        <?php foreach ($the_buildings as $building) { ?>

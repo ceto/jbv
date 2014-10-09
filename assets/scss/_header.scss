@@ -123,6 +123,21 @@
 		z-index:10;
 		background-color: transparent;
 		
+		height:65px;
+		&.fixedhead {
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      top:-65px;
+      //background-color: #fff;
+      height:65px;
+      transition:top 0.6s ease;
+      &.show {
+        top:0;
+      }
+    }
+		
 		&.redbg {
 			background-color: rgba($red-main,1);
 		}
@@ -132,7 +147,7 @@
 
 
 	}
-	
+
 
 	.wrapper-wide{
 		padding-top:1.5em;
