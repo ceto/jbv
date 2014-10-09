@@ -600,9 +600,9 @@ tbody.collapse.in {
       .navbar-nav li > a:hover, .navbar-nav li > a:focus {
         border-color: #fff;
         text-decoration: none; }
-      .onred .navbar-nav li > a {
+      .whitebg .navbar-nav li > a {
         color: #A71D3E; }
-        .onred .navbar-nav li > a:hover, .onred .navbar-nav li > a:focus {
+        .whitebg .navbar-nav li > a:hover, .whitebg .navbar-nav li > a:focus {
           border-color: #A71D3E; }
       @media only screen and (min-width: 768px) {
         .navbar-nav li > a {
@@ -676,9 +676,9 @@ input[type="checkbox"]#nav-toggle {
   .navbar-brand:hover, .navbar-brand:focus {
     color: #000;
     text-decoration: none; }
-  .onred .navbar-brand {
+  .whitebg .navbar-brand {
     color: #A71D3E; }
-    .onred .navbar-brand:hover, .onred .navbar-brand:focus {
+    .whitebg .navbar-brand:hover, .whitebg .navbar-brand:focus {
       color: #000; }
   @media only screen and (min-width: 768px) {
     .navbar-brand {
@@ -708,9 +708,9 @@ input[type="checkbox"]#nav-toggle {
       width: 100%;
       z-index: 10;
       background-color: transparent; }
-      .navbar.onwhite {
+      .navbar.redbg {
         background-color: #a71d3e; }
-      .navbar.onred {
+      .navbar.whitebg {
         background-color: white; } }
   .navbar .wrapper-wide {
     padding-top: 1.5em;

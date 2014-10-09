@@ -81,7 +81,7 @@
 		text-decoration: none;
 	}
 
-	.onred &{
+	.whitebg &{
 		color:$red-main;
 		&:hover, &:focus {
 			color: #000;
@@ -123,10 +123,10 @@
 		z-index:10;
 		background-color: transparent;
 		
-		&.onwhite {
+		&.redbg {
 			background-color: rgba($red-main,1);
 		}
-		&.onred {
+		&.whitebg {
 			background-color: rgba(#fff,1);
 		}
 

@@ -47,7 +47,7 @@
 				text-decoration: none;
 			}
 			
-			.onred & {
+			.whitebg & {
 				color:$red-main;
 				&:hover, &:focus {
 					border-color: $red-main;

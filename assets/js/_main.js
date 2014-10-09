@@ -64,5 +64,19 @@ $(document).ready(UTIL.loadEvents);
 
 
 jQuery(document).ready(function() {
-
+  $('.is_dark').waypoint(function() {
+    //alert('You have scrolled to a dark section.');
+    $('.navbar').removeClass('redbg');
+    $('.navbar').addClass('whitebg');
+  }, { offset: 65 });
+  $('.is_light').waypoint(function() {
+    //alert('You have scrolled to a light section.');
+    $('.navbar').removeClass('whitebg');
+    $('.navbar').addClass('redbg');
+  }, { offset: 65 });
+  $('.is_opaque').waypoint(function() {
+    //alert('You have scrolled to a opaque section.');
+    $('.navbar').removeClass('redbg');
+    $('.navbar').removeClass('whitebg');
+  }, { offset: 65 });
 });

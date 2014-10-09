@@ -1,5 +1,5 @@
 <?php if ( !is_archive() ) : ?>
-<aside id="contactblock" class="footer--contactblock <?php echo is_singular('apartment')?'collapse':''; ?>">
+<aside id="contactblock" class="footer--contactblock is_light <?php echo is_singular('apartment')?'collapse':''; ?>">
 	<div class="wrapper wrapper-extranarrow">
 		<div class="page-header">
 		  <h2>Meld din interesse</h2>

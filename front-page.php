@@ -1,6 +1,6 @@
 <main class="main" role="main">	
 	
-	<header class="home--header">
+	<header class="home--header is_opaque">
 		<div class="wrapper wrapper-fullwidth">
 			<div class="home--headhero">
 				<h1>27 Selveierleiligheter komer for salg i oktober.</h1>
@@ -8,7 +8,7 @@
 			
 			</div>
 			<div class="home--headcontact">
-				<div class="home--headcontact--inner">
+				<div class="home--headcontact--inner is_dark">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/randi_holligen.jpg" alt="Randi Holligen">
 					<h3>Randi Holligen</h3>
 					<p>Notar Molde</p>
@@ -27,7 +27,7 @@
 		$mappages=new WP_Query( 'page_id=39' );
 	?>
 
-	<section class="home--redblock">
+	<section class="home--redblock is_dark">
 		<div class="wrapper wrapper-wide">
 			<div class="home--redblock--left">
 				<?php if ( $leftpages->have_posts() ) : $leftpages->the_post(); ?>
@@ -42,7 +42,7 @@
 		</div>
 	</section>
 
-	<section class="home--mapblock">
+	<section class="home--mapblock is_light">
 		<div class="wrapper wrapper-fullwidth map-wrapper">
 			
 						
@@ -67,7 +67,7 @@
 		);
 		$the_slides = new WP_Query( $sl_args );
 	?>
-	<section class="home--bilderblock">
+	<section class="home--bilderblock is_light">
 		<div class="wrapper wrapper-fullwidth">
 			<div class="page-header"><h2>Bilder</h2></div>
 				<div class="master-slider ms-skin-default" id="masterslider">
@@ -91,7 +91,7 @@
 	</section>
 
 
-	<section class="home--chooserblock">
+	<section class="home--chooserblock is_dark">
 		<div class="wrapper wrapper-fullwidth">
 			<div class="page-header inverse">
 			  <h2>Finn din bolig</h2>
@@ -106,7 +106,7 @@
 			?>
 			<div class="thechooser">
 				<div class="visual-chooser visual-chooser-starter">
-					<a class="btn btn-light" data-toggle="collapse" data-target="#detailswrapper">Show details</a>
+					<a class="btn btn-light" data-toggle="collapse" data-target="#detailswrapper">Show apartments' details</a>
 				</div>
 				<div id="detailswrapper" class="wrapper wrapper-fullwidth detailswrapper collapse">
 	        <?php foreach ($the_buildings as $building) { ?>
@@ -120,6 +120,7 @@
 	</section>
 
 </main><!-- /.main -->
+
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 <script>
 	var map;

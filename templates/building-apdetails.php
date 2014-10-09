@@ -18,7 +18,7 @@
 		);
 		$the_aps = new WP_Query( $ap_args );
 ?>
-<div class="wrapper wrapper-narrow">
+<div class="wrapper wrapper-narrow is_dark">
 	<div class="theader">
 		<h3><?php echo $building->name; ?></h3>
 		<p><?php echo $the_aps->found_posts; ?> fri / <?php echo $building->count; ?> hjem</p>

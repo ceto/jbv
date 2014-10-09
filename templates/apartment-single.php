@@ -1,12 +1,12 @@
-<header class="apartment-hero">
+<header class="apartment-hero is_opaque">
   <div class="wrapper wrapper-fullwidth">
   </div>
 </header>
-<div class="wrapper wrapper-fullwidth wrapper-apartment">
+<div class="wrapper wrapper-fullwidth wrapper-apartment ">
   <div class="page-header">
     <h2><span>Finn Din Bolig</span> <?php the_title(); ?></h2>
   </div>
-  <div class="apartment-details">
+  <div class="apartment-details is_light">
 
 
     <div class="apartment-details--left">
