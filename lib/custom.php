@@ -135,11 +135,35 @@ function jbv_apartment_meta( array $meta_boxes ) {
     ),
 
     array(
-        'name' => 'Område',
+        'name' => 'Område / BRA',
         'id'   => $prefix . 'omr',
         'type' => 'text_small',
     ),
     
+    array(
+        'name' => 'P-rom',
+        'id'   => $prefix . 'prom',
+        'type' => 'text_small',
+    ),
+
+    array(
+        'name' => 'Soverom',
+        'id'   => $prefix . 'soverom',
+        'type' => 'text_small',
+    ),
+
+    array(
+        'name' => 'Rom',
+        'id'   => $prefix . 'rom',
+        'type' => 'text_small',
+    ),
+
+    array(
+        'name' => 'Balkong / Terasse',
+        'id'   => $prefix . 'balkong',
+        'type' => 'text_small',
+    ),
+
     array(
         'name' => 'Pris',
         'id'   => $prefix . 'pris',
@@ -190,7 +214,39 @@ function jbv_apartment_meta( array $meta_boxes ) {
 /********* End of Custom MetaBoxes for Apartment Management ****************/
 
 
+/************* Custom Apartment Type Taxonomies for Apartment Management *********/
 
+add_action( 'init', 'jbv_create_type_taxonomies', 0 );
+
+function jbv_create_type_taxonomies() {
+  // Add new taxonomy, make it hierarchical (like categories)
+  $labels = array(
+    'name'              => _x( 'Apartment Types', 'taxonomy general name' ),
+    'singular_name'     => _x( 'Apartment Type', 'taxonomy singular name' ),
+    'search_items'      => __( 'Search Apartment Types' ),
+    'all_items'         => __( 'All Apartment Types' ),
+    'parent_item'       => __( 'Parent Apartment Type' ),
+    'parent_item_colon' => __( 'Parent Apartment Type:' ),
+    'edit_item'         => __( 'Edit Apartment Type' ),
+    'update_item'       => __( 'Update Apartment Type' ),
+    'add_new_item'      => __( 'Add New Apartment Type' ),
+    'new_item_name'     => __( 'New Apartment Type Name' ),
+    'menu_name'         => __( 'Apartment Types' ),
+  );
+
+  $args = array(
+    'hierarchical'      => true,
+    'labels'            => $labels,
+    'show_ui'           => true,
+    'show_admin_column' => true,
+    'query_var'         => true,
+    'rewrite'           => array( 'slug' => 'apartment-type' ),
+  );
+
+  register_taxonomy( 'apartment-type', array( 'apartment' ), $args );
+}
+
+/********* END OF Custom Apartment Type Taxonomies for Apartment Management ****************/
 
 
 /************* Custom Object Taxonomies for Apartment Management *********/
@@ -260,6 +316,16 @@ function cmb_initialize_cmb_meta_boxes() {
 
 }
 
+
+
+function jbv_tweak_object_query($wp_query) {
+  if ( $wp_query->get('object')  &&  $wp_query->is_main_query() ){
+    $wp_query->set('orderby', 'title');
+    $wp_query->set('order', 'ASC');
+    $wp_query->set('posts_per_page', -1);
+  } 
+}
+add_action('pre_get_posts', 'jbv_tweak_object_query');
 
 
 

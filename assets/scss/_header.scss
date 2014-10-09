@@ -216,3 +216,23 @@
 	}
 }
 
+.theader {
+	@include clearfix();
+	text-align: center;
+	padding-top:0.5em;
+	padding-bottom: 0.5em;
+	line-height: 1.25;
+	margin:3em 0 1em;
+	h1,h2,h3 {
+		color:#fff;
+		font-family: $panefresco;
+		font-size: 21px;
+		font-weight: 900;
+		letter-spacing: 0.125em;
+		margin: 0;
+	}
+	p{
+		font-family: $sans-serif;
+		margin:0;
+	}
+}

@@ -22,6 +22,29 @@
 		@include bp($s4) {
 			background-image: url(../img/Arolia_Starter_CD_full.jpg);
 		}
+	}
+
+	.btn{
+		right:12px;
+		bottom:24px;
+		position: absolute;
+		right:6px;
+		bottom: 12px;
+		font-size: 12px;
+		@include bp($s2) {
+			font-size: 14px;
+			right:24px;
+			bottom: 24px;
+		}
+		@include bp($s3) {
+			font-size: 16px;
+			right:36px;
+			bottom: 24px;
+		}
+		@include bp($s5) {
+			right:48px;
+			bottom: 36px;
+		}
 	} 
 }
 

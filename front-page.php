@@ -100,27 +100,19 @@
 
 			<?php 
 				$builds_args = array(
-					'hide_empty' => false 
+					'hide_empty' => true 
 				);
 				$the_buildings = get_terms('object', $builds_args );
 			?>
 			<div class="thechooser">
 				<div class="visual-chooser visual-chooser-starter">
-					
+					<a class="btn btn-light" data-toggle="collapse" data-target="#detailswrapper">Show details</a>
 				</div>
-				
-				<div class="wrapper wrapper-extranarrow">
-		      <div class="datatable datatable-buildins">
-		      	<p class="datarow datatable--head">
-		          <span class="datarow--cell">Navn</span>
-		          <span class="datarow--cell">Floor</span>
-		          <span class="datarow--cell">Fri leilighets</span>
-		        </p>
-		        <?php foreach ($the_buildings as $building) { ?>
-		          <?php get_template_part('templates/building-datarow'); ?>
-		        <?php } ?>
-		      </div>
-		    </div>
+				<div id="detailswrapper" class="wrapper wrapper-fullwidth detailswrapper collapse">
+	        <?php foreach ($the_buildings as $building) { ?>
+	          <?php get_template_part('templates/building-apdetails'); ?>
+	        <?php } ?>
+        </div>
 			
 			</div>
 
@@ -141,8 +133,8 @@
 			    ]
 			  }
 			],
-			zoom: 8,
-			center: new google.maps.LatLng(-34.397, 150.644)
+			zoom: 12,
+			center: new google.maps.LatLng(62.756715, 7.274334)
 	};
 	map = new google.maps.Map(document.getElementById('map-canvas'),
 	  mapOptions);

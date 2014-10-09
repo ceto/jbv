@@ -767,6 +767,28 @@ input[type="checkbox"]#nav-toggle {
   .page-header.inverse h1, .page-header.inverse h2, .page-header.inverse h3 {
     color: #fff; }
 
+.theader {
+  text-align: center;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  line-height: 1.25;
+  margin: 3em 0 1em; }
+  .theader:before, .theader:after {
+    content: " ";
+    display: table; }
+  .theader:after {
+    clear: both; }
+  .theader h1, .theader h2, .theader h3 {
+    color: #fff;
+    font-family: 'panefresco', sans-serif;
+    font-size: 21px;
+    font-weight: 900;
+    letter-spacing: 0.125em;
+    margin: 0; }
+  .theader p {
+    font-family: 'Open Sans', serif;
+    margin: 0; }
+
 .content-info {
   background-color: #333232;
   color: #fff;
@@ -798,7 +820,7 @@ input[type="checkbox"]#nav-toggle {
 
 /****************** Data Table Styles **************/
 .datatable {
-  margin: 4em 0;
+  margin: 1em 0;
   display: table;
   border-collapse: collapse;
   width: 100%;
@@ -816,7 +838,7 @@ input[type="checkbox"]#nav-toggle {
     font-family: 'panefresco', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 1.25em; }
+    font-size: 1.125em; }
     .datarow.datatable--head .datarow--cell {
       padding: 1em 0.666em; }
 
@@ -1015,6 +1037,8 @@ input[type="checkbox"]#nav-toggle {
 .home--chooserblock {
   color: #fff;
   background-color: #A71D3E; }
+  .home--chooserblock .detailswrapper .wrapper:last-of-type {
+    padding-bottom: 4em; }
 
 .footer--contactblock {
   font-family: 'Open Sans', serif;
@@ -1134,6 +1158,27 @@ textarea {
     @media only screen and (min-width: 1280px) {
       .visual-chooser.visual-chooser-starter {
         background-image: url(../img/Arolia_Starter_CD_full.jpg); } }
+  .visual-chooser .btn {
+    right: 12px;
+    bottom: 24px;
+    position: absolute;
+    right: 6px;
+    bottom: 12px;
+    font-size: 12px; }
+    @media only screen and (min-width: 768px) {
+      .visual-chooser .btn {
+        font-size: 14px;
+        right: 24px;
+        bottom: 24px; } }
+    @media only screen and (min-width: 1024px) {
+      .visual-chooser .btn {
+        font-size: 16px;
+        right: 36px;
+        bottom: 24px; } }
+    @media only screen and (min-width: 1600px) {
+      .visual-chooser .btn {
+        right: 48px;
+        bottom: 36px; } }
 
 .text-chooser {
   font-family: 'Open Sans', serif;
@@ -2246,6 +2291,9 @@ img.mfp-img {
     display: inline-block; }
   .apartment-facts .data-item:first-child {
     margin-top: 0; }
+  .apartment-facts .data-item a {
+    color: #fff;
+    text-decoration: none; }
 
 .apartment-discl {
   margin-top: 3em;

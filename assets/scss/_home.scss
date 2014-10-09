@@ -235,4 +235,13 @@
 .home--chooserblock {
 	color:#fff;
 	background-color: $red-main;
+
+	.detailswrapper{
+		
+		.wrapper:last-of-type {
+			padding-bottom: 4em;
+		}	
+	}
+
+
 }
