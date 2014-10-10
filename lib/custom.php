@@ -78,7 +78,7 @@ function jbv_create_apartment() {
     'has_archive' => true, 
     'hierarchical' => false,
     'menu_position' => null,
-    'supports' => array( 'title', 'editor', 'thumbnail')
+    'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes')
   ); 
 
   register_post_type( 'apartment', $args );
@@ -328,4 +328,16 @@ function jbv_tweak_object_query($wp_query) {
 add_action('pre_get_posts', 'jbv_tweak_object_query');
 
 
+
+
+function wpse73190_gist_adjacent_post_sort( $sql ) {
+  
+  $pattern = 'post_date';
+  $replacement = 'menu_order';
+  return str_replace( $pattern, $replacement, $sql );
+
+}
+
+add_filter( 'get_next_post_sort', 'wpse73190_gist_adjacent_post_sort' );
+add_filter( 'get_previous_post_sort', 'wpse73190_gist_adjacent_post_sort' );
 

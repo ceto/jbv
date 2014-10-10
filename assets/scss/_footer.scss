@@ -11,13 +11,28 @@
 		display: inline-block;
 	}
 	.footer--tothetop {
-		display: block;
+		display: inline-block;
 		text-transform: uppercase;
 		font-weight: bold;
 		color:#fff;
 		&:hover, &:focus {
-			color:$gray-light;
+			color:$green;
 			text-decoration: none;
+			i{
+				border-color: $green;
+			}
+		}
+		i{
+			text-transform: none;
+			font-weight: normal;
+			border-radius: 50%;
+			border:2px solid #fff;
+			width:2em;
+			height: 2em;
+			line-height: 1.75em;
+			margin-bottom: 0.5em;
+			text-align: center;
+			padding-left: 1px;
 		}
 	}
 	.footer--copy{

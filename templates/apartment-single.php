@@ -4,11 +4,11 @@
 </header>
 <div class="wrapper wrapper-fullwidth wrapper-apartment ">
   <div class="page-header">
+    <?php previous_post_link('%link','<i class="ion ion-ios7-arrow-left"></i>'); ?>
     <h2><span>Finn Din Bolig</span> <?php the_title(); ?></h2>
+    <?php next_post_link('%link','<i class="ion ion-ios7-arrow-right"></i>'); ?>
   </div>
   <div class="apartment-details is_light">
-
-
     <div class="apartment-details--left">
       <div class="apartment-details--left--inner">
         <figure class="apartment-3dfloormap">

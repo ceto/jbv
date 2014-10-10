@@ -53,6 +53,16 @@
 		@include bp($s2){
 			padding:0.5em 0.666em;
 		}
+
+		.tooltip & {
+			padding:0;
+			text-align: left;
+			display: block;
+			&:first-child{
+				font-weight: 700;
+				font-size: 1.5em;
+			}
+		}
 	}
 
 	

@@ -28,9 +28,9 @@
   
   <?php if ( is_front_page() ) : ?>
     <!-- Master Slider -->
-    <!-- script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/vendor/masterslider/jquery.easing.min.js"></script-->
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/assets/vendor/masterslider/masterslider.min.js"></script>
     <script>
+
       var slider = new MasterSlider();
       slider.setup('masterslider' , {
         width:1920,    // slider standard width
@@ -52,6 +52,46 @@
         space:20
 
       });
+
+    </script>
+
+    <!-- Google MAps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+
+      function initialize() {
+        var mapOptions = {
+          styles: [
+            {
+              "stylers": [
+                { "saturation": -100 },
+                { "gamma": 1.94 }
+              ]
+            }
+          ],
+          zoom: 12,
+          mapTypeControl: true,
+          mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+          },
+          // zoomControl: true,
+          // zoomControlOptions: {
+          //   style: google.maps.ZoomControlStyle.SMALL
+          // },
+          center: new google.maps.LatLng(62.756715, 7.274334)
+        };
+        map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+        var image = '<?php echo get_stylesheet_directory_uri(); ?>/assets/img/flag.png';
+        var myLatLng = new google.maps.LatLng(62.756715, 7.274334);
+        var beachMarker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          icon: image
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
     </script>
   <?php endif; ?>
 

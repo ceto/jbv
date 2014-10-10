@@ -67,6 +67,9 @@ img {
   max-width: 100%;
   height:auto;
 }
+#map-canvas img {
+  max-width: inherit;
+}
 
 html[data-useragent*='Chrome'][data-platform*='Mac'] p {
   font-feature-settings: normal;

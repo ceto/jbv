@@ -131,6 +131,17 @@ jQuery(document).ready(function() {
     $(window).resize(redraw_canvas);
   }
 
+  $('path').tooltip({
+    container: '.visual-chooser',
+    html:true,
+    placement:'auto top',
+    delay: { "show": 200, "hide": 100 },
+    title:function() {
+      return $('#'+$(this).attr('id').slice(1)).html();
+    }
+  });
+
+
 });
 
 

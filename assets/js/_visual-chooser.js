@@ -26,12 +26,13 @@ function redraw_canvas() {
     items[index] = paper.path(menuitem.attr('data-svg'));
 
             
-    items[index].node.id = menuitem.attr('id');
+    items[index].node.id = 'v' +  menuitem.attr('id');
+
 
     if ( menuitem.attr('data-state')==='fri' ) {
-      text='Nr.: '+menuitem.attr('data-name')+"\nGröße: "+menuitem.attr('data-size')+"m2,\nPris: "+menuitem.attr('data-price');
+      text="<h3>"+menuitem.attr('data-name')+"</h3><p>Område: "+menuitem.attr('data-omr')+",<br>Pris: "+menuitem.attr('data-pris')+"</p>";
     } else {
-      if ( menuitem.attr('data-status')==='utsolgt' ) {
+      if ( menuitem.attr('data-state')==='utsolgt' ) {
         text="Utsolgt";
       } else {
         text=menuitem.attr('data-name');
@@ -41,61 +42,32 @@ function redraw_canvas() {
     items[index].attr(
       {
        
-        fill: (menuitem.attr('data-state')==='fri')?'#00FF00':(menuitem.attr('data-state')==='utsolgt')?'#A71D3E':'transparent',
+        fill: (menuitem.attr('data-state')==='fri')?'#4AB84A':(menuitem.attr('data-state')==='utsolgt')?'#A71D3E':'transparent',
         opacity: 0,
         stroke: 'transparent',
-        "stroke-width": 1,
+        href:$(this).attr('data-url'),
         //title: text
 
       }
     );
     
 
-
-    items[index].data('url', $(this).attr('data-url'));
+    items[index].data('data-id', menuitem.attr('id'));
+    
+    //items[index].data('url', $(this).attr('data-url'));
 
     
-    if (menuitem.attr('data-state')!=='utsolgt') {
-
-      items[index].click(function () {
+   
+    items[index].click(function () {
         window.location=(items[index].data('url'));
-      });
+    });
 
-    
-      items[index].node.onmousemove = function(event){
-        var tooltipX = event.pageX - 8;
-        var tooltipY = event.pageY + 8;
-        $('div.tooltip').css({top: tooltipY, left: tooltipX});
-      };
-
-      items[index].node.onmouseenter = function(event){
-        this.style.cursor = 'pointer';
-        $('div.tooltip').remove();
-        $('<div class="tooltip">'+
-              '<h3>'+menuitem.attr('data-name')+'</h3>'+
-              '<p>'+
-              '<span class="omr">Größe: '+menuitem.attr('data-omr')+' m<sup>2</sup></span><br/>'+
-              '<span class="pris">Pris: '+menuitem.attr('data-pris')+'</span>'+
-              '</p>'+
-              '</div>').appendTo('body');
-        var tooltipX = event.pageX - 8;
-        var tooltipY = event.pageY + 8;
-        $('div.tooltip').css({top: tooltipY, left: tooltipX});
-
-      };
-
-      items[index].node.onmouseleave = function(event){
-        $('div.tooltip').remove();
-
-      };
-
-    }
 
     items[index].hover(
       function(event){
         items[index].attr(
         {
-          opacity: 0.43,
+          opacity: 0.5,
         });
         menuitem.toggleClass('active');
       },
@@ -112,7 +84,7 @@ function redraw_canvas() {
       function(){
         items[index].attr(
         {
-          opacity: 0.43,
+          opacity: 0.5,
         });
       },
       function(){
