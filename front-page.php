@@ -64,6 +64,8 @@
 			'post_type'   => array('slide'),
 			'ignore_sticky_posts' => true,
 			'posts_per_page'         => -1,
+			'orderby' => 'menu_order',
+			'order' => 'ASC'
 		);
 		$the_slides = new WP_Query( $sl_args );
 	?>
@@ -76,7 +78,7 @@
 							if (has_post_thumbnail() ) {
 								$image_id = get_post_thumbnail_id();
 								$thumb_url_array = wp_get_attachment_image_src($image_id, 'tiny169', true);
-								$image_url_array = wp_get_attachment_image_src($image_id, 'large169', true);
+								$image_url_array = wp_get_attachment_image_src($image_id, 'full169', true);
 								$thumb_url = $thumb_url_array[0];
 								$image_url = $image_url_array[0];
 						?>
@@ -98,23 +100,8 @@
 			</div>
 			
 
-			<?php 
-				$builds_args = array(
-					'hide_empty' => true 
-				);
-				$the_buildings = get_terms('object', $builds_args );
-			?>
-			<div class="thechooser">
-				<div id="visual-chooser" class="visual-chooser visual-chooser-starter">
-					<a class="btn btn-light" data-toggle="collapse" data-target="#detailswrapper">List apartments</a>
-				</div>
-				<div id="detailswrapper" class="wrapper wrapper-fullwidth detailswrapper collapse">
-	        <?php foreach ($the_buildings as $building) { ?>
-	          <?php get_template_part('templates/building-apdetails'); ?>
-	        <?php } ?>
-        </div>
-			
-			</div>
+			<?php get_template_part('templates/chooser','start'); ?>
+
 
 		</div>
 	</section>

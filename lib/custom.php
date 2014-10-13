@@ -33,7 +33,7 @@ function jbv_slider_init() {
 		'has_archive'        => false,
 		'hierarchical'       => false,
 		'menu_position'      => null,
-		'supports'           => array( 'title', 'editor', 'thumbnail',  )
+		'supports'           => array( 'title', 'thumbnail', 'page-attributes'  )
 	);
 
 	register_post_type( 'slide', $args );

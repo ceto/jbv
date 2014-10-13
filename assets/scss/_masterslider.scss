@@ -334,7 +334,11 @@
 .ms-thumb-frame img{width:160px;	height:90px;}
 .ms-thumb-frame{
 	padding:0 12px 0 0;
-	cursor: pointer;
+	cursor: move;
+	cursor: url("../vendor/masterslider/style/grab.png"), move;
+	.ms-ie & {
+		cursor: url("../vendor/masterslider/style/style/grab.cur"), move;
+	}
 	float: left;
 	overflow: hidden;
 	opacity: 0.5;

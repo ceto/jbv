@@ -1,6 +1,6 @@
 <header class="page-hero is_opaque">
 	<div class="wrapper wrapper-fullwidth">
-		<?php the_post_thumbnail(); ?>
+		<?php the_post_thumbnail('full169'); ?>
 		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo_kicsike.png" alt="JORDBÆRVEGEN" class="watermark">
 	</div>
 </header>

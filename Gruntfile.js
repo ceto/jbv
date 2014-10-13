@@ -47,15 +47,15 @@ module.exports = function(grunt) {
     sass: {
       dev: {
         options: {
-          //outputStyle: 'nested',
-          sourceMap: true
+          outputStyle: 'nested',
+          //sourceMap: true
         },
         files: { 'assets/css/main.css': 'assets/scss/styles.scss' }
       },
       build: {
         options: {
           outputStyle: 'compressed',
-          sourceMap: true
+          //sourceMap: true
         },
         files: { 'assets/css/main.min.css': 'assets/scss/styles.scss' }
       }

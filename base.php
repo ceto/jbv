@@ -37,9 +37,11 @@
         height:1024,   // slider standard height
         space:0,
         preload:3,
+        autoplay:true,
         fullwidth:true,
         autoHeight:true,
         view:"fade"
+        
         // more slider options goes here...
       });
       // adds Arrows navigation control to the slider.

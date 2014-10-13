@@ -1,4 +1,4 @@
-<?php if ( !is_archive() ) : ?>
+<?php if ( !is_archive() && !is_page_template('template-chooser.php') ) : ?>
 <aside id="contactblock" class="footer--contactblock is_light <?php echo is_singular('apartment')?'collapse':''; ?>">
 	<div class="wrapper wrapper-extranarrow">
 		<div class="page-header">
