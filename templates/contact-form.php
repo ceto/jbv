@@ -28,7 +28,7 @@
 
   //php mailer variables
   //$to = get_option('admin_email');
-  $to = 'szabogabi@gmail.com';
+  $to = 'randi@notar.no';
   $subject = "Message from ".get_bloginfo('name');
   
   $headers = "From: " . strip_tags($email) . "\r\n";
@@ -53,7 +53,7 @@ if(!$human == 0){
         }
         else //ready to go!
         {
-          $message='Name: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Subject: '.$lakas.'<br />'.$message;
+          $message='Name: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Message: <br />'.$message;
           $sent = wp_mail($to, $subject, $message, $headers);
             if($sent) {
               $response = gen_response('success', $message_sent); //message sent!
