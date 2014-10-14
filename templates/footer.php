@@ -5,7 +5,7 @@
   	</a>
     <br>
     <a href="#top" class="footer--tothetop"><i class="ion ion-chevron-up"></i><br>Tilbake til toppen</a>
-    <p class="footer--copy"><strong>&copy; 2014 Årølia Vest Alle</strong> rettigheter forbeholdt</p>
+    <p class="footer--copy"><strong>&copy; 2014 Årølia Vest Alle</strong> rettigheter forbeholdt &middot; Nettside og visuelle elementer er produsert av <a href="http://brickvisual.no/" target="_blank">Brick Visual AS.</a></p>
     <?php // dynamic_sidebar('sidebar-footer'); ?>
   </div>
 </footer>

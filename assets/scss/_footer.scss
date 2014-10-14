@@ -38,4 +38,13 @@
 	.footer--copy{
 		display: block;
 		font-size: 0.875em;
+		a {
+			color:$gray-light;
+			&:hover, &:focus {
+				color:$red_main;
+				text-decoration: none;
+
+			}
+
+		}
 	}

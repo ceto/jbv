@@ -128,3 +128,19 @@ textarea {
 	}
 }
 
+.contact-response {
+	text-align: center;
+	p{
+		margin:0;
+		padding:1em; 
+		width:100%;
+		color:#fff;
+		&.success {
+			background-color: $green;
+		}
+		&.error{
+			background-color: $red_main
+		}
+
+	}
+}

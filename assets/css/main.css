@@ -2703,6 +2703,11 @@ input[type="checkbox"]#nav-toggle {
 .footer--copy {
   display: block;
   font-size: 0.875em; }
+  .footer--copy a {
+    color: #9A9898; }
+    .footer--copy a:hover, .footer--copy a:focus {
+      color: #A71D3E;
+      text-decoration: none; }
 
 .wrapper-page {
   padding-top: 0;
@@ -3035,6 +3040,18 @@ textarea {
       color: #fff;
       -webkit-box-shadow: inset 0 0 0 1px #fff;
               box-shadow: inset 0 0 0 1px #fff; }
+
+.contact-response {
+  text-align: center; }
+  .contact-response p {
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+    color: #fff; }
+    .contact-response p.success {
+      background-color: #4AB84A; }
+    .contact-response p.error {
+      background-color: #A71D3E; }
 
 .thechooser {
   background-color: #A71D3E; }
