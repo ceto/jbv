@@ -222,7 +222,16 @@
 			letter-spacing: 0;
 			display: block;
 		}
-
+		a {
+			color:inherit;
+			text-decoration: none;
+			&:hover,&:focus{
+				color:$gray-text;
+			}
+		}
+		i{
+			font-size: 120%;
+		}
 	}
 	&.inverse{
 		h1,h2,h3 {

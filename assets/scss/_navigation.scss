@@ -84,6 +84,27 @@
 		}
 	}
 
+	li.dl {
+		> a {
+			&:after {
+				margin-left: 0.25em;
+				display: inline-block;
+				font-family: "Ionicons";
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				text-rendering: auto;
+				//font-size: 1.20em;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				content:"\f183";
+			}
+		}
+	}
+
 }
 
 

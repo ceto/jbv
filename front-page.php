@@ -9,8 +9,8 @@
 			</div>
 			<div class="home--headcontact">
 				<div class="home--headcontact--inner is_dark">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/randi_holligen.jpg" alt="Randi Holligen">
-					<h3>Randi Holligen</h3>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/randi_holligen.jpg" alt="Randi Hollingen">
+					<h3>Randi Hollingen</h3>
 					<p>Notar Molde</p>
 					<p>Daglig&nbsp;leder / Eiendomsmegler&nbsp;MNEF</p>
 					<p>Mobil: <a href="tel:481 37 921">481 37 921</a><br/><a href="mailto:randi@notar.no">randi@notar.no</a></p>
