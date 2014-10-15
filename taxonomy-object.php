@@ -29,7 +29,7 @@
         }
       </style-->
       <div id="visual-chooser" class="visual-chooser visual-chooser-starter">
-        <a class="btn btn-light" data-toggle="collapse" data-target="#detailswrapper">List apartments</a>
+        <a class="btn btn-light" data-toggle="collapse" data-target="#detailswrapper">Leilighetsoversikt</a>
       </div>
 
       <div id="detailswrapper" class="wrapper wrapper-wide detailswrapper collapse">
@@ -37,10 +37,11 @@
         <div class="datatable datatable-apartments">
           <p class="datarow datatable--head">
             <span class="datarow--cell">Navn</span>
-            <span class="datarow--cell">Floor</span>
-            <span class="datarow--cell">Område</span>
+            <span class="datarow--cell">Etasje</span>
+            <span class="datarow--cell">BRA</span>
+            <span class="datarow--cell">P-rom</span>
             <span class="datarow--cell">Pris</span>
-            <span class="datarow--cell">State</span>
+            <span class="datarow--cell">Status</span>
           </p>
           <?php while (have_posts()) : the_post(); ?>
             <?php get_template_part('templates/apartment-datarow'); ?>

@@ -24,6 +24,10 @@
 		</span>
 		
 		<span class="datarow--cell">
+			<?php echo get_post_meta( $post->ID, '_meta_prom', true ); ?> m<sup>2</sup>
+		</span>
+		
+		<span class="datarow--cell">
 			<?php echo number_format(get_post_meta( $post->ID, '_meta_pris', true ), 0, ',', ' '); ?> NOK
 		</span>
 

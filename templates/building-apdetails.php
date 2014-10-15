@@ -26,11 +26,12 @@
 	
 	<div class="datatable datatable-apartments">
 	  <p class="datarow datatable--head">
-	    <span class="datarow--cell">Navn</span>
-	    <span class="datarow--cell">Floor</span>
-	    <span class="datarow--cell">Område</span>
-	    <span class="datarow--cell">Pris</span>
-	    <span class="datarow--cell">State</span>
+			<span class="datarow--cell">Navn</span>
+			<span class="datarow--cell">Etasje</span>
+			<span class="datarow--cell">BRA</span>
+			<span class="datarow--cell">P-rom</span>
+			<span class="datarow--cell">Pris</span>
+			<span class="datarow--cell">Status</span>
 	  </p>
 	  <?php while ($the_aps->have_posts()) : $the_aps->the_post(); ?>
 	    <?php get_template_part('templates/apartment-datarow'); ?>

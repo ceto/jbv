@@ -16,7 +16,7 @@
   $missing_content = 'Missing fields are required';
   $email_invalid   = 'Invalid e-mail address';
   $message_unsent  = 'Error message';
-  $message_sent    = 'Your message has been sent';
+  $message_sent    = '<strong>Melding er sendt Randi Hollingen i Notar.</strong><br>Vi vil ta kontakt med deg så raskt som mulig. Ha en fin dag';
 
   //user posted variables
   $name = $_POST['contact_name'];
@@ -56,6 +56,7 @@ if(!$human == 0){
           $message='Name: '.$name.'<br/>'.'Tel: '.$tel.'<br />'.'Message: <br />'.$message;
           $sent = wp_mail($to, $subject, $message, $headers);
             if($sent) {
+              $sent = wp_mail($email, $subject, $message, $headers);
               $response = gen_response('success', $message_sent); //message sent!
             } else {
                 $response = gen_response('error', $message_unsent); //message wasn't sent

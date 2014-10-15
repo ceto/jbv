@@ -32,7 +32,7 @@
             </a>
           </figure>
           <figure class="apartment-schema">
-            <a href="#">
+            <a class="popup-zoom" href="<?php echo get_post_meta($post->ID, '_meta_schema', true); ?>">
               <img src="<?php echo get_post_meta($post->ID, '_meta_schema', true); ?>" />
             </a>
           </figure>
@@ -47,14 +47,15 @@
         <div class="holdit">
           <div class="apartment-facts">
             <p class="data-item"><span>Navn</span> <?php the_title(); ?></p>
-            <p class="data-item"><span>Floor</span> <?php echo get_post_meta( $post->ID, '_meta_floor', true ); ?></p>
-            <p class="data-item"><span>Område</span> <?php echo get_post_meta( $post->ID, '_meta_omr', true ); ?> m<sup>2</sup></p>
+            <p class="data-item"><span>Etasje</span> <?php echo get_post_meta( $post->ID, '_meta_floor', true ); ?></p>
+            <p class="data-item"><span>BRA</span> <?php echo get_post_meta( $post->ID, '_meta_omr', true ); ?> m<sup>2</sup></p>
+            <p class="data-item"><span>P-rom</span> <?php echo get_post_meta( $post->ID, '_meta_prom', true ); ?> m<sup>2</sup></p>
             <p class="data-item"><span>Rom</span> <?php echo get_post_meta( $post->ID, '_meta_rom', true ); ?></p>
             <p class="data-item"><span>Balkong</span> <?php echo get_post_meta( $post->ID, '_meta_balkong', true ); ?> m<sup>2</sup></p>
             
             <p class="price data-item"><span>Pris</span> <?php echo number_format(get_post_meta( $post->ID, '_meta_pris', true ), 0, ',', ' '); ?> NOK</p>
             <p class="data-item"><span>Type</span> <a href="<?php echo get_term_link($type); ?>"><?php echo $type->name; ?></a></p>
-            <p class="data-item"><span>State</span> <?php echo get_post_meta( $post->ID, '_meta_state', true ); ?></p>
+            <p class="data-item"><span>Status</span> <?php echo get_post_meta( $post->ID, '_meta_state', true ); ?></p>
             
           </div>
           <div class="apartment-discl">
