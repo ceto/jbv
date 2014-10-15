@@ -5,7 +5,7 @@
 		text-align: center;
 		@include bp($s2) {
 			float:left;
-			width:60%;
+			width:50%;
 			text-align: right;
 			
 		}
@@ -21,7 +21,7 @@
 	.apartment-details--right{
 		@include bp($s2) {
 			float:left;
-			width:40%;
+			width:50%;
 		}
 	}
 		
@@ -34,6 +34,19 @@
 			@include bp($s2){
 				padding:36px;
 				max-width: 549px;
+			}
+			@include bp($s4){
+				padding:60px 48px;
+			}
+
+			&.nohorizpadding {
+				@include bp($s1){
+					padding:12px;
+				}
+				@include bp($s2){
+					padding:60px 0 12px;
+					//max-width: 549px;
+				}
 			}
 
 		}
@@ -56,11 +69,12 @@
 		padding:0 36px 0 12px;
 	}
 	@include bp($s4) {
-		padding:0 60px 0 12px;
+		padding:0 48px 0 48px;
 	}
 	img {
 		width:100%;
 		max-width: 640px;
+		max-height: 980px;
 	}
 }
 

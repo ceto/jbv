@@ -29,7 +29,7 @@
 		$mappages=new WP_Query( 'page_id=39' );
 	?>
 
-	<section class="home--redblock is_dark">
+	<!--section class="home--redblock is_dark">
 		<div class="wrapper wrapper-wide">
 			<div class="home--redblock--left">
 				<?php if ( $leftpages->have_posts() ) : $leftpages->the_post(); ?>
@@ -42,7 +42,7 @@
 				<?php endif; ?>
 			</div>
 		</div>
-	</section>
+	</section-->
 
 	<section class="home--mapblock is_light">
 		<div class="wrapper wrapper-fullwidth map-wrapper">

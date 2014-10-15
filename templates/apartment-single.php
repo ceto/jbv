@@ -12,9 +12,9 @@
     <div class="apartment-details--left">
       <div class="apartment-details--left--inner">
         <figure class="apartment-3dfloormap">
-          <?php $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large');  ?>
-          <a class="popup-zoom" href="<?php echo $imgsrc[0]; ?>">
-            <?php the_post_thumbnail('large'); ?>
+          <?php $leftimgsrc = wp_get_attachment_image_src( get_post_meta($post->ID, '_meta_floormap_id', true), '640free');  ?>
+          <a class="popup-zoom" href="<?php echo get_post_meta($post->ID, '_meta_floormap', true); ?>">
+            <img src="<?php echo $leftimgsrc[0] ?>" />
           </a>
         </figure>
       </div>
@@ -25,15 +25,17 @@
     <div class="apartment-details--right">
       
       <div class="apartment-details--right--inner-white">
-        <div class="holdit">
+        <div class="holdit nohorizpadding">
           <figure class="apartment-2dfloormap">
-            <a class="popup-zoom" href="<?php echo get_post_meta($post->ID, '_meta_floormap', true); ?>">
-              <img src="<?php echo get_post_meta($post->ID, '_meta_floormap', true); ?>" />
+            <?php $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'orig');  ?>
+            <a class="popup-zoom" href="<?php echo $imgsrc[0]; ?>">
+              <?php the_post_thumbnail('480free'); ?>
             </a>
           </figure>
           <figure class="apartment-schema">
+            <?php $schemaimgsrc = wp_get_attachment_image_src( get_post_meta($post->ID, '_meta_schema_id', true), '480free');  ?>
             <a class="popup-zoom" href="<?php echo get_post_meta($post->ID, '_meta_schema', true); ?>">
-              <img src="<?php echo get_post_meta($post->ID, '_meta_schema', true); ?>" />
+              <img src="<?php echo $schemaimgsrc[0]; ?>" />
             </a>
           </figure>
         </div>

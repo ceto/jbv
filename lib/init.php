@@ -25,6 +25,11 @@ function roots_setup() {
   add_image_size('small169', 480, 270, true );
   add_image_size('tiny169', 160, 90, true );
   
+  add_image_size('480free', 480, 3333, false );
+  add_image_size('640free', 640, 3333, false );
+  add_image_size('orig', 9999, 9999, false );
+
+
   add_filter( 'jpeg_quality', create_function( '', 'return 60;' ) );
 
 
