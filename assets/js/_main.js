@@ -158,6 +158,8 @@ jQuery(document).ready(function() {
   });
 
 
+  $('.home--videoblock').fitVids();
+
 
 });
 

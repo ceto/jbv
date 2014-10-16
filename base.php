@@ -76,6 +76,7 @@
           mapTypeControlOptions: {
             style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
           },
+          scrollwheel: false,
           // zoomControl: true,
           // zoomControlOptions: {
           //   style: google.maps.ZoomControlStyle.SMALL

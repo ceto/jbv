@@ -129,6 +129,9 @@
 	font-family: $sans-serif;
 	background-color: $red-main;
 	color:#fff;
+	// background-color: #fff;
+	// color:$red_main;
+	
 	padding-bottom: 4em;
 
 
@@ -174,6 +177,32 @@
 			width:50%;
 		}
 		
+	}
+
+	.featimage-row {
+		a {
+			display: block;
+			padding:4px;
+			background-color: #fff;
+			margin:24px 12px;
+			&:hover, &:focus {
+
+			}
+			@include bp($s1){
+				float:left;
+				width:46%;
+				margin:12px 2%;
+			}
+			@include bp($s3){
+				float:left;
+				width:22%;
+				margin:60px 1.5% 0;
+			}
+
+			img {
+				display: block;
+			}
+		}
 	}
 
 

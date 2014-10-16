@@ -29,9 +29,9 @@
 		$mappages=new WP_Query( 'page_id=39' );
 	?>
 
-	<!--section class="home--redblock is_dark">
+	<section class="home--redblock is_dark">
 		<div class="wrapper wrapper-wide">
-			<div class="home--redblock--left">
+<!-- 			<div class="home--redblock--left">
 				<?php if ( $leftpages->have_posts() ) : $leftpages->the_post(); ?>
 					<?php the_content(); ?>
 				<?php endif; ?>
@@ -40,27 +40,47 @@
 				<?php if ( $rightpages->have_posts() ) : $rightpages->the_post(); ?>
 					<?php the_content(); ?>
 				<?php endif; ?>
-			</div>
-		</div>
-	</section-->
-
-	<section class="home--mapblock is_light">
-		<div class="wrapper wrapper-fullwidth map-wrapper">
+			</div> -->
 			
-						
-			<div class="home--mapblock--text">
-				<?php if ( $mappages->have_posts() ) : $mappages->the_post(); ?>
-					<?php the_content(); ?>
-				<?php endif; ?>
+			<div class="featimage-row">
+				<a href="<?php echo get_stylesheet_directory_uri() ?>/assets/img/kicsinegy/jrd_innside_002-1920x1080.jpg" class="popup-zoom">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/kicsinegy/jrd_innside_002-640x360.jpg" alt="">
+				</a>
+				<a href="<?php echo get_stylesheet_directory_uri() ?>/assets/img/kicsinegy/jrd_ytre_006-1920x1080.jpg" class="popup-zoom">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/kicsinegy/jrd_ytre_006-640x360.jpg" alt="">
+				</a>
+				<a href="<?php echo get_stylesheet_directory_uri() ?>/assets/img/kicsinegy/jrd_innside_006-1920x1080.jpg" class="popup-zoom">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/kicsinegy/jrd_innside_006-640x360.jpg" alt="">
+				</a>
+				<a href="<?php echo get_stylesheet_directory_uri() ?>/assets/img/kicsinegy/jrd_ytre_007-1920x1080.jpg" class="popup-zoom">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/kicsinegy/jrd_ytre_007-640x360.jpg" alt="">
+				</a>
 			</div>
-
-			<div id="map-canvas"></div>
-
 
 		</div>
 	</section>
 
-	
+	<section class="home--videoblock is_light">
+		<div class="wrapper wrapper-fullwidth">
+			<div class="page-header">
+			  <h2>Jordbærvegen Film<span>Press play to start video</span></h2>
+			</div>			
+
+			<iframe width="1280" height="720" src="//www.youtube.com/embed/tFUwCqyUSsE?rel=0&amp;controls=1&amp;showinfo=0&amp;feature=player_detailpage&amp;VQ=large" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</section>
+
+	<section class="home--chooserblock is_dark">
+		<div class="wrapper wrapper-fullwidth">
+			<div class="page-header inverse">
+			  <h2>Finn din bolig<span>Dra musepekeren over bygget for å velge leilighet</span></h2>
+			</div>			
+
+			<?php get_template_part('templates/chooser','start'); ?>
+
+		</div>
+	</section>
+
 	<?php 
 		$sl_args = array(
 			'post_type'   => array('slide'),
@@ -94,16 +114,21 @@
 		</div>
 	</section>
 
-
-	<section class="home--chooserblock is_dark">
-		<div class="wrapper wrapper-fullwidth">
-			<div class="page-header inverse">
-			  <h2>Finn din bolig<span>Dra musepekeren over bygget for å velge leilighet</span></h2>
-			</div>			
-
-			<?php get_template_part('templates/chooser','start'); ?>
-
+	<section class="home--mapblock is_light">
+		<div class="wrapper wrapper-fullwidth map-wrapper">
+			<div class="home--mapblock--text">
+				<?php if ( $mappages->have_posts() ) : $mappages->the_post(); ?>
+					<?php the_content(); ?>
+				<?php endif; ?>
+			</div>
+			<div id="map-canvas"></div>
 		</div>
 	</section>
+
+	
+
+
+
+
 
 </main><!-- /.main -->

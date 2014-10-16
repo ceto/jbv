@@ -2925,6 +2925,24 @@ input[type="checkbox"]#nav-toggle {
     float: right;
     width: 50%; } }
 
+.featimage-row a {
+  display: block;
+  padding: 4px;
+  background-color: #fff;
+  margin: 24px 12px; }
+  @media only screen and (min-width: 480px) {
+    .featimage-row a {
+      float: left;
+      width: 46%;
+      margin: 12px 2%; } }
+  @media only screen and (min-width: 1024px) {
+    .featimage-row a {
+      float: left;
+      width: 22%;
+      margin: 60px 1.5% 0; } }
+  .featimage-row a img {
+    display: block; }
+
 .home--mapblock {
   font-family: 'Open Sans', serif;
   border-bottom: 5px solid #A71D3E;
