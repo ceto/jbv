@@ -247,6 +247,7 @@
 		z-index: 1;
 		padding:2em 12px;
 		background-color: #fff;
+		text-align: justify;
 		@include bp($s2){
 			padding:2em 24px 4em;
 			width:340px;

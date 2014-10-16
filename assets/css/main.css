@@ -2360,6 +2360,8 @@ tbody.collapse.in {
     .wrapper-extranarrow {
       padding: 0 36px; } }
 
+.multicolumn p {
+  text-align: justify; }
 @media only screen and (min-width: 768px) {
   .multicolumn {
     -webkit-column-count: 2;
@@ -2379,9 +2381,9 @@ tbody.collapse.in {
     -webkit-column-count: 3;
        -moz-column-count: 3;
             column-count: 3;
-    -webkit-column-gap: 36px;
-       -moz-column-gap: 36px;
-            column-gap: 36px; } }
+    -webkit-column-gap: 48px;
+       -moz-column-gap: 48px;
+            column-gap: 48px; } }
 
 .navbar-nav {
   list-style-type: none;
@@ -2504,7 +2506,18 @@ a[rel="next"], a[rel="prev"] {
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
-    display: inline-block;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 130px;
+    height: 35px;
+    background-image: url(../img/logo_kicsike.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    -webkit-background-size: auto 100%;
+            background-size: auto 100%;
+    text-indent: -9999px;
+    overflow: hidden;
     font-size: 13px;
     line-height: 1;
     padding: 0.5em 0; }
@@ -2515,10 +2528,11 @@ a[rel="next"], a[rel="prev"] {
 .nav-toggle {
   display: inline-block;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1;
   border: 1px solid #fff;
-  padding: 0.5em 0.25em;
+  padding: 0.5em 0.333em;
+  margin-top: 5px;
   cursor: pointer;
   float: right; }
   .nav-toggle:hover, .nav-toggle:focus {
@@ -2543,6 +2557,17 @@ input[type="checkbox"]#nav-toggle {
       display: none; }
 
 .navbar-brand {
+  position: absolute;
+  height: 42px;
+  width: 158px;
+  top: 8px;
+  text-indent: -9999px;
+  overflow: hidden;
+  background-image: url(../img/logo_kicsike.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  -webkit-background-size: auto 100%;
+          background-size: auto 100%;
   display: none;
   font-family: 'Open Sans', serif;
   color: #fff;
@@ -2555,7 +2580,8 @@ input[type="checkbox"]#nav-toggle {
     color: #000;
     text-decoration: none; }
   .whitebg .navbar-brand {
-    color: #A71D3E; }
+    color: #A71D3E;
+    background-image: url(../img/logo_red.png); }
     .whitebg .navbar-brand:hover, .whitebg .navbar-brand:focus {
       color: #000; }
   @media only screen and (min-width: 768px) {
@@ -2973,7 +2999,8 @@ input[type="checkbox"]#nav-toggle {
   position: relative;
   z-index: 1;
   padding: 2em 12px;
-  background-color: #fff; }
+  background-color: #fff;
+  text-align: justify; }
   @media only screen and (min-width: 768px) {
     .home--mapblock--text {
       padding: 2em 24px 4em;

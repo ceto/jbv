@@ -6,7 +6,6 @@
 				
 				<h1> INFORMASJONSMØTE TORSDAG 16/10 KL. 18.00 </h1>
 				<h2> Vi ønsker velkommen til informasjonsmøte om dette spennende prosjektet torsdag 16/10 kl. 18.00 i Notar sine lokaler i Grandfjæra 24B. Håper vi sees!</h2>
-				<img class="redlogo" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo_red.png" alt="JORDBÆRVEGEN" class="watermark">
 			
 			</div>
 			<div class="home--headcontact">

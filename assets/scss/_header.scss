@@ -18,7 +18,17 @@
 		color:#fff;
 		text-transform: uppercase;
 		font-weight: 700;
-		display: inline-block;
+		display: block;
+		position: absolute;
+		top:0;
+		width:130px;
+		height:35px;
+		background-image: url(../img/logo_kicsike.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: auto 100%;
+		text-indent: -9999px;
+		overflow:hidden;
 		font-size: 13px;
 		line-height: 1;
 		padding:0.5em 0;
@@ -33,10 +43,11 @@
 	.nav-toggle {
 		display: inline-block;
 		font-weight: 700;
-		font-size: 12px;
+		font-size: 13px;
 		line-height: 1;
 		border:1px solid #fff;
-		padding: 0.5em 0.25em;
+		padding: 0.5em 0.333em;
+		margin-top:5px;
 		cursor: pointer;
 		float:right;
 		&:hover, &:focus {
@@ -68,6 +79,17 @@
 
 
 .navbar-brand {
+	position: absolute;
+	height:42px;
+	width:158px;
+	top:8px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background-image: url(../img/logo_kicsike.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: auto 100%;
+	//background-color: $green;
 	display: none;
 	font-family: $sans-serif;
 	color:#fff;
@@ -83,6 +105,7 @@
 
 	.whitebg &{
 		color:$red-main;
+		background-image: url(../img/logo_red.png);
 		&:hover, &:focus {
 			color: #000;
 		}
