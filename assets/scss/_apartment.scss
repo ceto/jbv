@@ -96,6 +96,7 @@
 
 
 .apartment-facts {
+}
 	.data-item {
 		font-family: $panefresco;
 		font-weight: 700;
@@ -129,8 +130,23 @@
 				color:$green;
 			}
 		}
+		.tooltip & {
+			text-align: left;
+			font-size: 14px;
+			margin:0.25em 0;
+			span {
+				font-size: 12px;
+				min-width: 5.5em;
+				 
+			}
+			&:first-child{
+				font-weight: 700;
+				font-size: 1.5em;
+				margin: 0.25em 0 0.5em;
+			}
+		}
 	}
-}
+
 
 .apartment-discl {
 	margin-top: 3em;

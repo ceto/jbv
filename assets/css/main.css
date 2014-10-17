@@ -3552,17 +3552,8 @@ input[type="checkbox"]#nav-toggle {
   @media only screen and (min-width: 768px) {
     .datarow--cell {
       padding: 0.5em 0.666em; } }
-  /* line 57, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
-  .tooltip .datarow--cell {
-    padding: 0;
-    text-align: left;
-    display: block; }
-    /* line 61, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
-    .tooltip .datarow--cell:first-child {
-      font-weight: 700;
-      font-size: 1.5em; }
 
-/* line 69, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+/* line 59, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
 .pdf-viewer {
   width: 100%;
   min-height: 900px;
@@ -5312,43 +5303,57 @@ img.mfp-img {
     .apartment-2dfloormap img, .apartment-schema img {
       width: 100%; } }
 
-/* line 99, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
-.apartment-facts .data-item {
+/* line 100, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+.data-item {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 1;
   margin: 0.75em 0; }
-  /* line 106, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
-  .apartment-facts .data-item span {
+  /* line 107, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  .data-item span {
     font-family: 'Open Sans', serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     min-width: 7.5em;
     display: inline-block; }
-  /* line 114, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
-  .apartment-facts .data-item small {
+  /* line 115, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  .data-item small {
     font-family: 'Open Sans', serif;
     font-weight: 400;
     font-size: 14px; }
-  /* line 120, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
-  .apartment-facts .data-item:first-child {
+  /* line 121, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  .data-item:first-child {
     margin-top: 0; }
-  /* line 124, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
-  .apartment-facts .data-item a {
+  /* line 125, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  .data-item a {
     color: #fff;
     text-decoration: none; }
-    /* line 127, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
-    .apartment-facts .data-item a:hover, .apartment-facts .data-item a:focus {
+    /* line 128, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+    .data-item a:hover, .data-item a:focus {
       color: #4AB84A; }
+  /* line 133, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  .tooltip .data-item {
+    text-align: left;
+    font-size: 14px;
+    margin: 0.25em 0; }
+    /* line 137, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+    .tooltip .data-item span {
+      font-size: 12px;
+      min-width: 5.5em; }
+    /* line 142, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+    .tooltip .data-item:first-child {
+      font-weight: 700;
+      font-size: 1.5em;
+      margin: 0.25em 0 0.5em; }
 
-/* line 135, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+/* line 151, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
 .apartment-discl {
   margin-top: 3em;
   max-width: 480px; }
-  /* line 139, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  /* line 155, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
   .apartment-discl .btn {
     margin-top: 1.5em; }
 
