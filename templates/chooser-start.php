@@ -8,7 +8,7 @@
 ?>
 <div class="thechooser">
 	<div id="visual-chooser" class="visual-chooser visual-chooser-starter">
-		<a class="btn btn-light" data-toggle="collapse" data-target="#detailswrapper">Leilighetsoversikt</a>
+		<a class="btn btn-light" data-toggle="collapse" data-target="#detailswrapper">Leilighetsoversikt <i class="ion ion-plus"></i></a>
 	</div>
 	<div id="detailswrapper" class="wrapper wrapper-fullwidth detailswrapper collapse">
     <?php foreach ($the_buildings as $building) { ?>

@@ -4,9 +4,8 @@
 		<div class="wrapper wrapper-fullwidth">
 			<div class="home--headhero">
 				
-				<h1> INFORMASJONSMØTE TORSDAG 16/10 KL. 18.00 </h1>
-				<h2> Vi ønsker velkommen til informasjonsmøte om dette spennende prosjektet torsdag 16/10 kl. 18.00 i Notar sine lokaler i Grandfjæra 24B. Håper vi sees!</h2>
-			
+			<h1>INFORMASJONSMØTE TORSDAG ONSDAG 12/11 KL. 19.00</h1>
+			<h2>Vi ønsker velkommen til informasjonsmøte om dette spennende prosjektet Onsdag 12/11 kl. 19.00 i Notar sine lokaler i Grandfjæra 24B.</h2>			
 			</div>
 			<div class="home--headcontact">
 				<div class="home--headcontact--inner is_dark">

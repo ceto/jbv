@@ -111,6 +111,11 @@
 			min-width: 7.5em;
 			display: inline-block;
 		}
+		small {
+			font-family:$sans-serif;
+			font-weight:400;
+			font-size:14px;
+		}
 
 		&:first-child {
 			margin-top: 0;
@@ -119,6 +124,10 @@
 		a {
 			color:#fff;
 			text-decoration: none;
+			&:hover, &:focus {
+				//text-decoration:underline;
+				color:$green;
+			}
 		}
 	}
 }

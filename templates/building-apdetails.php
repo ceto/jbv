@@ -6,8 +6,8 @@
 			'posts_per_page'         => -1,
 			'orderby' => 'title',
 			'order' => 'ASC',
-			'meta_key' => '_meta_state',
-			'meta_value' => 'fri',
+			//'meta_key' => '_meta_state',
+			//'meta_value' => 'fri',
 			'tax_query' => array(
 				array(
 					'taxonomy' => 'object',
@@ -21,7 +21,7 @@
 <div class="wrapper wrapper-narrow is_dark">
 	<div class="theader">
 		<h3><?php echo $building->name; ?></h3>
-		<p><?php echo $the_aps->found_posts; ?> fri / <?php echo $building->count; ?> hjem</p>
+		<p><?php echo $the_aps->found_posts; ?> ledig / <?php echo $building->count; ?> hjem</p>
 	</div>
 	
 	<div class="datatable datatable-apartments">

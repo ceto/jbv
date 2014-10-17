@@ -113,9 +113,9 @@ function jbv_apartment_meta( array $meta_boxes ) {
       'id'   => $prefix . 'state',
       'type' => 'radio_inline',
       'options' => array(
-          array('name' => 'Fri', 'value' => 'fri',),
-          array('name' => 'Utsolgt', 'value' => 'utsolgt',),
-          array('name' => 'Reserved', 'value' => 'reserved',)
+          array('name' => 'Ledig', 'value' => 'fri',),
+          array('name' => 'Solgt', 'value' => 'utsolgt',),
+          array('name' => 'Reservert', 'value' => 'reserved',)
       )
     ),
 
@@ -341,3 +341,25 @@ function wpse73190_gist_adjacent_post_sort( $sql ) {
 add_filter( 'get_next_post_sort', 'wpse73190_gist_adjacent_post_sort' );
 add_filter( 'get_previous_post_sort', 'wpse73190_gist_adjacent_post_sort' );
 
+
+
+function st_conv($state) {
+  switch ($state) {
+    case 'fri':
+      return 'ledig';
+      break;
+
+    case 'utsolgt':
+      return 'solgt';
+      break;
+    
+    case 'reserved':
+      return 'reservert';
+      break;
+    
+
+    default:
+      return $state;
+      break;
+  }
+}

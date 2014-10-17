@@ -42,7 +42,7 @@ function redraw_canvas() {
     items[index].attr(
       {
        
-        fill: (menuitem.attr('data-state')==='fri')?'#4AB84A':(menuitem.attr('data-state')==='utsolgt')?'#A71D3E':'transparent',
+        fill: (menuitem.attr('data-state')==='fri')?'#4AB84A':(menuitem.attr('data-state')==='utsolgt')?'#A71D3E':'#FF9900',
         opacity: 0,
         stroke: 'transparent',
         href:$(this).attr('data-url'),
@@ -99,3 +99,11 @@ function redraw_canvas() {
   });
 }
 
+
+jQuery(document).ready(function() {
+  
+  if ( $('.visual-chooser').length > 0 ) {
+    redraw_canvas();
+    $(window).resize(redraw_canvas);
+  }
+});

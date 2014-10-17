@@ -126,10 +126,6 @@ jQuery(document).ready(function() {
 
 
 
-  if ( $('.visual-chooser').length > 0 ) {
-    redraw_canvas();
-    $(window).resize(redraw_canvas);
-  }
 
   $('path').tooltip({
     container: '.visual-chooser',

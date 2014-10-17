@@ -1,7 +1,6 @@
 'use strict';
 module.exports = function(grunt) {
 
-  //grunt.loadNpmTasks('grunt-text-replace');
   
   // Load all tasks
   require('load-grunt-tasks')(grunt);
@@ -60,16 +59,6 @@ module.exports = function(grunt) {
         files: { 'assets/css/main.min.css': 'assets/scss/styles.scss' }
       }
 
-    },
-    replace: {
-      default: {
-        src: ['assets/css/*.css.map'],
-        overwrite: true,                 // overwrite matched source files
-        replacements: [{
-          from: 'assets/scss',
-          to: '../../assets/scss'
-        }]
-      }
     },
     concat: {
       options: {
@@ -149,7 +138,6 @@ module.exports = function(grunt) {
         ],
         tasks: [
           'sass:dev', 
-          'replace',
           'autoprefixer:dev'
         ]
       },
@@ -184,7 +172,6 @@ module.exports = function(grunt) {
   grunt.registerTask('dev', [
     'jshint',
     'sass:dev',
-    'replace',
     'autoprefixer:dev',
     'concat',
     'notify'
@@ -192,7 +179,6 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'jshint',
     'sass:build',
-    'replace',
     'autoprefixer:build',
     'uglify',
     'modernizr',

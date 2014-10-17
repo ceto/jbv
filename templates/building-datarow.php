@@ -27,7 +27,7 @@
 		</span>
 		
 		<span class="datarow--cell">
-		<?php echo $the_aps->found_posts; ?> fri / <?php echo $building->count; ?>
+		<?php echo $the_aps->found_posts; ?> ledig / <?php echo $building->count; ?>
 		</span>
 		
 

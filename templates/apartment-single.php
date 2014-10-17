@@ -44,9 +44,30 @@
       <?php 
         $types = get_the_terms( $post->ID, 'apartment-type' );
         foreach ($types as $key => $value) { $type = $value; }
+        $the_sameaps = new WP_Query(array(
+            'post_type'   => array('apartment'),
+            'ignore_sticky_posts' => true,
+            'posts_per_page'         => -1,
+            'orderby' => 'title',
+            'order' => 'ASC',
+            'tax_query' => array(
+              array(
+                'taxonomy' => 'apartment-type',
+                'field'    => 'id',
+                'terms'    => array( $type->term_id ),
+              ),
+            )
+          )
+        );
+        
       ?>
+      <?php $samelist=''; while ($the_sameaps->have_posts()) : $the_sameaps->the_post(); ?>
+        <?php $samelist .= '<a href="'.get_permalink().'">'.get_the_title().'</a> | '; ?>
+      <?php endwhile; $samelist=substr($samelist, 0, -3); ?>
       <div class="apartment-details--right--inner-red">
         <div class="holdit">
+
+
           <div class="apartment-facts">
             <p class="data-item"><span>Navn</span> <?php the_title(); ?></p>
             <p class="data-item"><span>Etasje</span> <?php echo get_post_meta( $post->ID, '_meta_floor', true ); ?></p>
@@ -54,12 +75,11 @@
             <p class="data-item"><span>P-rom</span> <?php echo get_post_meta( $post->ID, '_meta_prom', true ); ?> m<sup>2</sup></p>
             <p class="data-item"><span>Rom</span> <?php echo get_post_meta( $post->ID, '_meta_rom', true ); ?></p>
             <p class="data-item"><span>Balkong</span> <?php echo get_post_meta( $post->ID, '_meta_balkong', true ); ?> m<sup>2</sup></p>
-            
             <p class="price data-item"><span>Pris</span> <?php echo number_format(get_post_meta( $post->ID, '_meta_pris', true ), 0, ',', ' '); ?> NOK</p>
-            <p class="data-item"><span>Type</span> <a href="<?php echo get_term_link($type); ?>"><?php echo $type->name; ?></a></p>
-            <p class="data-item"><span>Status</span> <?php echo get_post_meta( $post->ID, '_meta_state', true ); ?></p>
-            
+            <p class="data-item"><span>Type <?php echo $type->name; ?></span> <?php echo $samelist; ?></p>
+            <p class="data-item"><span>Status</span> <?php echo st_conv(get_post_meta( $post->ID, '_meta_state', true )); ?></p>
           </div>
+
           <div class="apartment-discl">
             <?php the_content(); ?>
             <a class="btn btn-light" data-toggle="collapse" data-target="#contactblock">Meld din interesse</a>

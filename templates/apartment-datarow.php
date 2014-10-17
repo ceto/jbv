@@ -32,7 +32,7 @@
 		</span>
 
 		<span class="datarow--cell">
-				 <?php echo get_post_meta( $post->ID, '_meta_state', true ); ?>
+				 <?php echo st_conv(get_post_meta( $post->ID, '_meta_state', true )); ?>
 		</span>
 	</a>
 </p>
