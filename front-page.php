@@ -4,7 +4,7 @@
 		<div class="wrapper wrapper-fullwidth">
 			<div class="home--headhero">
 				
-			<h1>INFORMASJONSMØTE TORSDAG ONSDAG 12/11 KL. 19.00</h1>
+			<h1>INFORMASJONSMØTE ONSDAG 12/11 KL. 19.00</h1>
 			<h2>Vi ønsker velkommen til informasjonsmøte om dette spennende prosjektet Onsdag 12/11 kl. 19.00 i Notar sine lokaler i Grandfjæra 24B.</h2>			
 			</div>
 			<div class="home--headcontact">
@@ -61,7 +61,7 @@
 	<section class="home--videoblock is_light">
 		<div class="wrapper wrapper-fullwidth">
 			<div class="page-header">
-			  <h2>Jordbærvegen Film<span>Press play to start video</span></h2>
+			  <h2>Jordbærvegen Film<span>Klikk play for å starte filmen</span></h2>
 			</div>			
 
 			<iframe width="1280" height="720" src="//www.youtube.com/embed/tFUwCqyUSsE?rel=0&amp;controls=1&amp;showinfo=0&amp;feature=player_detailpage&amp;VQ=large" frameborder="0" allowfullscreen></iframe>
