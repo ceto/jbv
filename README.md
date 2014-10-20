@@ -4,6 +4,6 @@ Responsive WordPress theme made for [jordbærvegen.no](http://jordbærvegen.no) 
 
 ## Links
 
-* Source: [https://github.com/ceto/alvascentrum](https://github.com/ceto/alvascentrum)
+* Source: [https://github.com/ceto/jbv](https://github.com/ceto/jbv)
 * Live Site: [http://jordbærvegen.no/](http://jordbærvegen.no/)
 * Developer Site: [HYDROGENEDSIGN](http://hydrogene.hu)
