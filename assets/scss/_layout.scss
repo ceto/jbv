@@ -18,6 +18,9 @@
 		@include bp($s3) {
 			padding:0 36px;
 		}
+		.navbar &{
+			max-width: none;
+		}
 	}
 
 	.wrapper-narrow {
@@ -67,5 +70,27 @@
 		column-gap: 48px;
 	}
 
+}
+
+
+.twocolumn{
+	p {
+		text-align: justify;		
+	}
+	
+	@include bp($s2) {
+		column-count: 2;
+		column-gap: 36px;
+
+		*:first-child{
+			margin-top: 0;
+		}
+		p, ul{
+			break-inside:avoid;
+		}
+
+
+	
+	}
 }
 

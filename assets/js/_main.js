@@ -127,9 +127,6 @@ jQuery(document).ready(function() {
 
 
 
-
-
-
   $('.popup-zoom').magnificPopup({
     type: 'image',
     closeOnContentClick: true,
@@ -150,10 +147,4 @@ jQuery(document).ready(function() {
 
 
 });
-
-
-
-
-
-
 

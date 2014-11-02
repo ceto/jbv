@@ -4,6 +4,7 @@
 .visual-chooser {
 	position:relative;
 	width:100%;
+	  backface-visibility: hidden;
 
 	background-color: $red_main;
 	background-repeat: no-repeat;

@@ -22,9 +22,11 @@
 			right:0;
 			top:0;
 			height: 100%;
+			background-position: right center;
 		}
 		@include bp($s3){
 			left:314px;
+			background-position: right center;
 		}
 		@include bp($s4){
 			//left:430px;
@@ -133,6 +135,10 @@
 	// color:$red_main;
 	
 	padding-bottom: 4em;
+	padding-top:0;
+	@include bp($s2){
+		padding-top:4em;	
+	}
 
 
 	h2 {
@@ -196,7 +202,7 @@
 			@include bp($s3){
 				float:left;
 				width:22%;
-				margin:60px 1.5% 0;
+				margin:0 1.5% 0;
 			}
 
 			img {

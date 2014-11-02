@@ -58,7 +58,17 @@
 	
 .pdf-viewer{
 	width:100%;
-	min-height: 900px;
-	height: 900px;
+	min-height: 300px;
 	border:none;
+	@include bp($s2){
+		min-height: 900px;
+		height: 900px;
+	}
+	p {
+		padding: 1em;
+	}
+	object {
+		display: block;
+		background-color: $gray_main;	
+	}
 }

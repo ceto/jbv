@@ -1,5 +1,5 @@
 <?php get_template_part('templates/head'); ?>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> data-spy="scroll" data-target=".subnav">
 
   <!--[if lt IE 9]>
     <div class="alert alert-warning">
@@ -57,6 +57,17 @@
 
     </script>
 
+    <!-- Subnav with Tooltip -->
+
+    <script>
+      jQuery(document).ready(function() {
+        $('.navbar-subnav a').tooltip({
+          template:'<div class="tooltip tooltip--subnav" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
+          //delay: { "show": 200, "hide": 100 },
+        });
+        // $('body').scrollspy({ target: '.subnav' })      
+      });
+    </script>
     <!-- Google MAps -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>

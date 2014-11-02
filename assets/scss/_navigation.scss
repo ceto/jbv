@@ -13,7 +13,7 @@
 		transform: translateY(0) scale(1);
 	}
 
-	@include bp($s2){
+	@include bp($s3){
 		transform:none;
 		margin:0;
 		padding:0;
@@ -25,7 +25,7 @@
 		margin:0.5em;
 
 
-		@include bp($s2){
+		@include bp($s3){
 			display: inline-block;
 			margin:0;
 			margin-left:12px;
@@ -50,7 +50,7 @@
 
 
 
-			@include bp($s2){
+			@include bp($s3){
 				display: inline-block;
 				font-size: 13px;
 
@@ -107,9 +107,79 @@
 
 }
 
+/******** subnav on Front Page ********/
+.subnav {
+	position: fixed;
+	z-index:9;
+	right:0.75em;
+	top:140px;
+	width:180px;
+	display: none;
+	@include bp($s3){
+		right:2em;
+		display: block;
+	}
+	@include bp($s4){
+		right:2em;
+	}
+}
+.navbar-subnav {
+	position: relative;
+	text-align: right;
+	list-style-type: none;
+	margin:0 0;
+	padding:0;
 
+	li {
+		> a {
+			display: inline-block;
+			color:#fff;
+			font-family: $sans-serif;
+			font-size: 1em;
+			font-weight: 400;
+			padding:0.25em 0.25em;
+			&:before {
+				margin-left: 0.333em;
+				content: '';
+				display: inline-block;
+				width:8px;
+				height:8px;
+				background-color: #fff;
+				border: 2px solid $red_main;
+				border-radius: 50%;
+				box-shadow: 0 0 0 2px #fff;
+			}
+			&:hover, &:focus {
+				text-decoration: none;
+				&:before {
+					background-color: $red_main;
+				}
+			}
 
+			span {	
+				display: none;
+			}
 
+		}
+
+		&.active > a {
+			&:before {
+				background-color:$red_main;
+			}
+			
+		}
+
+	}
+}
+
+.tooltip--subnav {
+	.tooltip-inner {
+		padding: 0.5em 1em;
+		font-family: $sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
 
 
 /********* Prev/Next Link ********/

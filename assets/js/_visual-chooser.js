@@ -97,21 +97,12 @@ function redraw_canvas() {
 
 
   });
-}
-
-
-jQuery(document).ready(function() {
-  
-  if ( $('.visual-chooser').length > 0 ) {
-    redraw_canvas();
-    $(window).resize(redraw_canvas);
-  }
 
   $('path').tooltip({
     container: '.visual-chooser',
     html:true,
     placement:'auto top',
-    //delay: { "show": 200, "hide": 100 },
+    delay: { "show": 100, "hide": 0 },
     title:function() {
       $datarow=$('#'+$(this).attr('id').slice(1)+' .datarow--cell');
 
@@ -125,6 +116,17 @@ jQuery(document).ready(function() {
       return $tiptext;
     }
   });
+
+}
+
+
+jQuery(document).ready(function() {
+  
+  if ( $('.visual-chooser').length > 0 ) {
+    redraw_canvas();
+    $(window).resize(redraw_canvas);
+  }
+
 
 
 });

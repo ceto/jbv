@@ -2869,18 +2869,19 @@ html, body {
   -webkit-font-smoothing: antialiased;
   color: #3C3B3B;
   background-color: #fff;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
-/* line 25, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 26, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 a {
   color: #9A9898;
   text-decoration: none; }
 
-/* line 31, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 32, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 a:hover, a:focus {
   text-decoration: underline; }
 
-/* line 36, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 37, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 p {
   /* -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -2891,7 +2892,7 @@ p {
   -webkit-font-feature-settings: "liga", "dlig", "onum";
   font-feature-settings: "liga", "dlig", "onum"; }
 
-/* line 48, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 49, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 700;
@@ -2899,94 +2900,94 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1.5em;
   letter-spacing: -0.0333em;
   color: #484646; }
-  /* line 55, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+  /* line 56, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
   h1 + p, h1 + ul, h1 + ol, h2 + p, h2 + ul, h2 + ol, h3 + p, h3 + ul, h3 + ol, h4 + p, h4 + ul, h4 + ol, h5 + p, h5 + ul, h5 + ol, h6 + p, h6 + ul, h6 + ol {
     margin-top: 0; }
 
-/* line 60, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 61, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 h2 {
   font-size: 1.5em; }
 
-/* line 66, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 67, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 img {
   max-width: 100%;
   height: auto; }
 
-/* line 70, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 71, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 #map-canvas img {
   max-width: inherit; }
 
-/* line 74, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 75, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 html[data-useragent*='Chrome'][data-platform*='Mac'] p {
   -webkit-font-feature-settings: normal;
      -moz-font-feature-settings: normal;
           font-feature-settings: normal; }
 
-/* line 78, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 79, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 :target:not(#comments):not(.global-nav) {
   -webkit-animation: target-fade 2s 1;
        -o-animation: target-fade 2s 1;
           animation: target-fade 2s 1; }
 
 @-webkit-keyframes target-fade {
-  /* line 84, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+  /* line 85, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
   0% {
     background-color: rgba(154, 152, 152, 0.1);
     outline: 6px solid #9a9898; }
 
-  /* line 88, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+  /* line 89, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
   100% {
     background-color: rgba(154, 152, 152, 0);
     outline: 6px solid #9a9898; } }
 
 @-o-keyframes target-fade {
-  /* line 84, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+  /* line 85, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
   0% {
     background-color: rgba(154, 152, 152, 0.1);
     outline: 6px solid #9a9898; }
 
-  /* line 88, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+  /* line 89, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
   100% {
     background-color: rgba(154, 152, 152, 0);
     outline: 6px solid #9a9898; } }
 
 @keyframes target-fade {
-  /* line 84, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+  /* line 85, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
   0% {
     background-color: rgba(154, 152, 152, 0.1);
     outline: 6px solid #9a9898; }
 
-  /* line 88, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+  /* line 89, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
   100% {
     background-color: rgba(154, 152, 152, 0);
     outline: 6px solid #9a9898; } }
 
-/* line 100, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 101, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
        -o-transition: opacity 0.15s linear;
           transition: opacity 0.15s linear; }
-  /* line 103, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+  /* line 104, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
   .fade.in {
     opacity: 1; }
 
-/* line 108, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 109, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 .collapse {
   display: none; }
-  /* line 111, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+  /* line 112, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
   .collapse.in {
     display: block; }
 
-/* line 116, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 117, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 tr.collapse.in {
   display: table-row; }
 
-/* line 118, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 119, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 tbody.collapse.in {
   display: table-row-group; }
 
-/* line 120, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
+/* line 121, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/base */
 .collapsing {
   position: relative;
   height: 0;
@@ -3022,8 +3023,11 @@ tbody.collapse.in {
   @media only screen and (min-width: 1024px) {
     .wrapper-wide {
       padding: 0 36px; } }
+  /* line 21, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
+  .navbar .wrapper-wide {
+    max-width: none; }
 
-/* line 23, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
+/* line 26, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
 .wrapper-narrow {
   max-width: 1024px;
   padding: 0 12px; }
@@ -3034,7 +3038,7 @@ tbody.collapse.in {
     .wrapper-narrow {
       padding: 0 36px; } }
 
-/* line 34, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
+/* line 37, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
 .wrapper-extranarrow {
   max-width: 768px;
   padding: 0 12px; }
@@ -3045,7 +3049,7 @@ tbody.collapse.in {
     .wrapper-extranarrow {
       padding: 0 36px; } }
 
-/* line 47, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
+/* line 50, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
 .multicolumn p {
   text-align: justify; }
 @media only screen and (min-width: 768px) {
@@ -3056,10 +3060,10 @@ tbody.collapse.in {
     -webkit-column-gap: 36px;
        -moz-column-gap: 36px;
             column-gap: 36px; }
-    /* line 55, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
+    /* line 58, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
     .multicolumn *:first-child {
       margin-top: 0; }
-    /* line 58, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
+    /* line 61, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
     .multicolumn p, .multicolumn ul {
       -webkit-column-break-inside: avoid;
          page-break-inside: avoid;
@@ -3072,6 +3076,26 @@ tbody.collapse.in {
     -webkit-column-gap: 48px;
        -moz-column-gap: 48px;
             column-gap: 48px; } }
+
+/* line 77, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
+.twocolumn p {
+  text-align: justify; }
+@media only screen and (min-width: 768px) {
+  .twocolumn {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 36px;
+       -moz-column-gap: 36px;
+            column-gap: 36px; }
+    /* line 85, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
+    .twocolumn *:first-child {
+      margin-top: 0; }
+    /* line 88, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/layout */
+    .twocolumn p, .twocolumn ul {
+      -webkit-column-break-inside: avoid;
+         page-break-inside: avoid;
+              break-inside: avoid; } }
 
 /* line 1, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
 .navbar-nav {
@@ -3092,7 +3116,7 @@ tbody.collapse.in {
         -ms-transform: translateY(0) scale(1);
          -o-transform: translateY(0) scale(1);
             transform: translateY(0) scale(1); }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .navbar-nav {
       -webkit-transform: none;
           -ms-transform: none;
@@ -3105,7 +3129,7 @@ tbody.collapse.in {
   /* line 23, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
   .navbar-nav li {
     margin: 0.5em; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1024px) {
       .navbar-nav li {
         display: inline-block;
         margin: 0;
@@ -3126,7 +3150,7 @@ tbody.collapse.in {
       .navbar-nav li > a:hover, .navbar-nav li > a:focus {
         border-color: #fff;
         text-decoration: none; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1024px) {
         .navbar-nav li > a {
           display: inline-block;
           font-size: 13px; }
@@ -3166,8 +3190,72 @@ tbody.collapse.in {
     -moz-osx-font-smoothing: grayscale;
     content: "\f183"; }
 
+/******** subnav on Front Page ********/
+/* line 111, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+.subnav {
+  position: fixed;
+  z-index: 9;
+  right: 0.75em;
+  top: 140px;
+  width: 180px;
+  display: none; }
+  @media only screen and (min-width: 1024px) {
+    .subnav {
+      right: 2em;
+      display: block; } }
+  @media only screen and (min-width: 1280px) {
+    .subnav {
+      right: 2em; } }
+
+/* line 126, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+.navbar-subnav {
+  position: relative;
+  text-align: right;
+  list-style-type: none;
+  margin: 0 0;
+  padding: 0; }
+  /* line 134, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+  .navbar-subnav li > a {
+    display: inline-block;
+    color: #fff;
+    font-family: 'Open Sans', serif;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0.25em 0.25em; }
+    /* line 141, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+    .navbar-subnav li > a:before {
+      margin-left: 0.333em;
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border: 2px solid #A71D3E;
+      border-radius: 50%;
+      -webkit-box-shadow: 0 0 0 2px #fff;
+              box-shadow: 0 0 0 2px #fff; }
+    /* line 152, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+    .navbar-subnav li > a:hover, .navbar-subnav li > a:focus {
+      text-decoration: none; }
+      /* line 154, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+      .navbar-subnav li > a:hover:before, .navbar-subnav li > a:focus:before {
+        background-color: #A71D3E; }
+    /* line 159, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+    .navbar-subnav li > a span {
+      display: none; }
+  /* line 166, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+  .navbar-subnav li.active > a:before {
+    background-color: #A71D3E; }
+
+/* line 176, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+.tooltip--subnav .tooltip-inner {
+  padding: 0.5em 1em;
+  font-family: 'Open Sans', serif;
+  font-weight: 700;
+  text-transform: uppercase; }
+
 /********* Prev/Next Link ********/
-/* line 116, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+/* line 186, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
 a[rel="next"], a[rel="prev"] {
   font-size: 4em;
   line-height: 1;
@@ -3176,18 +3264,18 @@ a[rel="next"], a[rel="prev"] {
   text-decoration: none;
   color: #A71D3E;
   display: inline-block; }
-  /* line 124, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+  /* line 194, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
   a[rel="next"]:hover, a[rel="next"]:focus, a[rel="prev"]:hover, a[rel="prev"]:focus {
     color: #9A9898; }
 
-/* line 134, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+/* line 204, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
 .page-header a[rel="next"], .page-header a[rel="prev"] {
   position: absolute;
   top: 0.333em; }
-/* line 139, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+/* line 209, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
 .page-header a[rel="next"] {
   right: 0; }
-/* line 143, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
+/* line 213, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/navigation */
 .page-header a[rel="prev"] {
   left: 0; }
 
@@ -3201,7 +3289,7 @@ a[rel="next"], a[rel="prev"] {
   left: 0;
   width: 100%;
   z-index: 11; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .mobile-header {
       display: none; } }
   /* line 15, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/header */
@@ -3237,7 +3325,7 @@ a[rel="next"], a[rel="prev"] {
   font-size: 13px;
   line-height: 1;
   border: 1px solid #fff;
-  padding: 0.5em 0.333em;
+  padding: 0.5em 0.5em;
   margin-top: 5px;
   cursor: pointer;
   float: right; }
@@ -3316,7 +3404,7 @@ input[type="checkbox"]#nav-toggle {
   -webkit-transition: opacity 0.5s, visibility 0.5s;
        -o-transition: opacity 0.5s, visibility 0.5s;
           transition: opacity 0.5s, visibility 0.5s; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
     .navbar {
       visibility: visible;
       opacity: 1;
@@ -3556,9 +3644,19 @@ input[type="checkbox"]#nav-toggle {
 /* line 59, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
 .pdf-viewer {
   width: 100%;
-  min-height: 900px;
-  height: 900px;
+  min-height: 300px;
   border: none; }
+  @media only screen and (min-width: 768px) {
+    .pdf-viewer {
+      min-height: 900px;
+      height: 900px; } }
+  /* line 67, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  .pdf-viewer p {
+    padding: 1em; }
+  /* line 70, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  .pdf-viewer object {
+    display: block;
+    background-color: #333232; }
 
 /* line 1, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--header {
@@ -3581,10 +3679,12 @@ input[type="checkbox"]#nav-toggle {
       left: 290px;
       right: 0;
       top: 0;
-      height: 100%; } }
+      height: 100%;
+      background-position: right center; } }
   @media only screen and (min-width: 1024px) {
     .home--headhero {
-      left: 314px; } }
+      left: 314px;
+      background-position: right center; } }
   @media only screen and (min-width: 1280px) {
     .home--headhero {
       background-image: url(../img/home_head_bg2_1920.jpg); } }
@@ -3592,7 +3692,7 @@ input[type="checkbox"]#nav-toggle {
     .home--headhero {
       left: 25%;
       background-image: url(../img/home_head_bg2_brutal.jpg); } }
-  /* line 39, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 41, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--headhero h1 {
     margin: 4em auto 1em;
     padding: 0 1em;
@@ -3607,7 +3707,7 @@ input[type="checkbox"]#nav-toggle {
       .home--headhero h1 {
         margin: 6em auto 1em;
         font-size: 28px; } }
-  /* line 56, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 58, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--headhero h2 {
     font-family: 'Open Sans', serif;
     color: #fff;
@@ -3622,7 +3722,7 @@ input[type="checkbox"]#nav-toggle {
         margin: 1em auto 13em;
         font-size: 20px; } }
 
-/* line 73, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 75, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--headcontact {
   font-family: 'Open Sans', serif;
   color: #fff;
@@ -3641,57 +3741,61 @@ input[type="checkbox"]#nav-toggle {
     .home--headcontact {
       width: 25%;
       padding: 8em 36px 3em; } }
-  /* line 95, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 97, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--headcontact img {
     width: 238px; }
-  /* line 99, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 101, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--headcontact h3 {
     text-transform: uppercase;
     letter-spacing: 0.25em;
     margin-top: 2em;
     margin-bottom: 1em;
     color: #fff; }
-  /* line 106, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 108, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--headcontact a {
     color: #fff; }
-    /* line 108, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+    /* line 110, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
     .home--headcontact a:hover, .home--headcontact a:focus {
       color: #000;
       text-decoration: none; }
-  /* line 113, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 115, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--headcontact .btn {
     margin-top: 2em;
     width: 100%;
     padding: 0.5em 0.5em; }
 
-/* line 121, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 123, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--headcontact--inner {
   max-width: 240px;
   text-align: center;
   margin: 0 auto; }
 
-/* line 128, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 130, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--redblock {
   font-family: 'Open Sans', serif;
   background-color: #A71D3E;
   color: #fff;
-  padding-bottom: 4em; }
-  /* line 138, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  padding-bottom: 4em;
+  padding-top: 0; }
+  @media only screen and (min-width: 768px) {
+    .home--redblock {
+      padding-top: 4em; } }
+  /* line 144, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--redblock h2 {
     text-transform: uppercase;
     color: #fff;
     font-size: 1.333em;
     margin-top: 3em;
     margin-bottom: 1em; }
-  /* line 146, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 152, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--redblock a {
     color: #fff; }
-    /* line 148, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+    /* line 154, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
     .home--redblock a:hover, .home--redblock a:focus {
       color: #000;
       text-decoration: none; }
 
-/* line 155, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 161, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--redblock--left, .home--redblock--right {
   padding: 0 0; }
   @media only screen and (min-width: 768px) {
@@ -3714,7 +3818,7 @@ input[type="checkbox"]#nav-toggle {
     float: right;
     width: 50%; } }
 
-/* line 183, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 189, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .featimage-row a {
   display: block;
   padding: 4px;
@@ -3729,18 +3833,18 @@ input[type="checkbox"]#nav-toggle {
     .featimage-row a {
       float: left;
       width: 22%;
-      margin: 60px 1.5% 0; } }
-  /* line 202, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+      margin: 0 1.5% 0; } }
+  /* line 208, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .featimage-row a img {
     display: block; }
 
-/* line 211, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 217, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--mapblock {
   font-family: 'Open Sans', serif;
   border-bottom: 5px solid #A71D3E;
   background-color: #fff; }
 
-/* line 217, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 223, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 #map-canvas {
   margin: 0;
   padding: 0;
@@ -3762,7 +3866,7 @@ input[type="checkbox"]#nav-toggle {
     #map-canvas {
       left: 25%; } }
 
-/* line 245, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 251, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--mapblock--text {
   position: relative;
   z-index: 1;
@@ -3784,7 +3888,7 @@ input[type="checkbox"]#nav-toggle {
     .home--mapblock--text {
       width: 25%;
       padding: 3em 48px 5em; } }
-  /* line 267, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 273, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--mapblock--text h2 {
     text-transform: uppercase;
     color: #A71D3E;
@@ -3792,15 +3896,15 @@ input[type="checkbox"]#nav-toggle {
     margin-top: 3em;
     margin-bottom: 1em; }
 
-/* line 277, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 283, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--bilderblock {
   color: #A71D3E; }
 
-/* line 284, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 290, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--chooserblock {
   color: #fff;
   background-color: #A71D3E; }
-  /* line 290, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 296, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--chooserblock .detailswrapper .wrapper:last-of-type {
     padding-bottom: 4em; }
 
@@ -3942,12 +4046,14 @@ textarea {
 .visual-chooser {
   position: relative;
   width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   background-color: #A71D3E;
   background-repeat: no-repeat;
   -webkit-background-size: 100% auto;
           background-size: 100% auto;
   background-position: top center; }
-  /* line 13, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/chooser */
+  /* line 14, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/chooser */
   .visual-chooser.visual-chooser-starter {
     background-image: url(../img/Arolia_Starter_CD_small.jpg); }
     @media only screen and (min-width: 768px) {
@@ -3959,10 +4065,10 @@ textarea {
     @media only screen and (min-width: 1280px) {
       .visual-chooser.visual-chooser-starter {
         background-image: url(../img/Arolia_Starter_CD_full.jpg); } }
-  /* line 26, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/chooser */
+  /* line 27, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/chooser */
   .visual-chooser svg {
     display: block; }
-  /* line 30, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/chooser */
+  /* line 31, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/chooser */
   .visual-chooser .btn {
     right: 12px;
     bottom: 24px;
@@ -3985,7 +4091,7 @@ textarea {
         right: 48px;
         bottom: 36px; } }
 
-/* line 54, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/chooser */
+/* line 55, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/chooser */
 .text-chooser {
   font-family: 'Open Sans', serif;
   margin: 4em 0;
@@ -5380,27 +5486,27 @@ img.mfp-img {
   font-size: 14px;
   line-height: 1.4;
   opacity: 0; }
-  /* line 17, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+  /* line 18, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
   .tooltip.in {
     opacity: 0.95; }
-  /* line 18, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+  /* line 19, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
   .tooltip.top {
     margin-top: -3px;
     padding: 6px 0; }
-  /* line 19, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+  /* line 20, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
   .tooltip.right {
     margin-left: 3px;
     padding: 0 6px; }
-  /* line 20, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+  /* line 21, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
   .tooltip.bottom {
     margin-top: 3px;
     padding: 6px 0; }
-  /* line 21, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+  /* line 22, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
   .tooltip.left {
     margin-left: -3px;
     padding: 0 6px; }
 
-/* line 25, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 26, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip-inner {
   max-width: 320px;
   padding: 1em 1.333em;
@@ -5410,7 +5516,7 @@ img.mfp-img {
   background-color: #A71D3E;
   border-radius: 0; }
 
-/* line 36, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 37, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip-arrow {
   position: absolute;
   width: 0;
@@ -5418,53 +5524,53 @@ img.mfp-img {
   border-color: transparent;
   border-style: solid; }
 
-/* line 44, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 45, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.top .tooltip-arrow {
   bottom: 0;
   left: 50%;
   margin-left: -6px;
   border-width: 6px 6px 0;
   border-top-color: #A71D3E; }
-/* line 51, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 52, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.top-left .tooltip-arrow {
   bottom: 0;
   left: 6px;
   border-width: 6px 6px 0;
   border-top-color: #A71D3E; }
-/* line 57, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 58, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.top-right .tooltip-arrow {
   bottom: 0;
   right: 6px;
   border-width: 6px 6px 0;
   border-top-color: #A71D3E; }
-/* line 63, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 64, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.right .tooltip-arrow {
   top: 50%;
   left: 0;
   margin-top: -6px;
   border-width: 6px 6px 6px 0;
   border-right-color: #A71D3E; }
-/* line 70, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 71, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.left .tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -6px;
   border-width: 6px 0 6px 6px;
   border-left-color: #A71D3E; }
-/* line 77, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 78, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.bottom .tooltip-arrow {
   top: 0;
   left: 50%;
   margin-left: -6px;
   border-width: 0 6px 6px;
   border-bottom-color: #A71D3E; }
-/* line 84, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 85, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.bottom-left .tooltip-arrow {
   top: 0;
   left: 6px;
   border-width: 0 6px 6px;
   border-bottom-color: #A71D3E; }
-/* line 90, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 91, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.bottom-right .tooltip-arrow {
   top: 0;
   right: 6px;

@@ -1,11 +1,22 @@
+<nav class="subnav">
+	<ul class="nav navbar-subnav">
+		<li><a href="#home--header" data-toggle="tooltip" data-placement="left" title="Toppen"><span>Toppen</span></a></li>
+		<li><a href="#home--videoblock" data-toggle="tooltip" data-placement="left" title="Film"><span>Film</span></a></li>
+		<li><a href="#home--chooserblock" data-toggle="tooltip" data-placement="left" title="Fin din bolig"><span>Fin&nbsp;din&nbsp;bolig</span></a></li>
+		<li><a href="#home--bilderblock" data-toggle="tooltip" data-placement="left" title="Bilder"><span>Bilder</span></a></li>
+		<li><a href="#home--mapblock" data-toggle="tooltip" data-placement="left" title="Belligenhet"><span>Belligenhet</span></a></li>
+		<li><a href="#contactblock" data-toggle="tooltip" data-placement="left" title="Meld din interess"><span>Meld&nbsp;din&nbsp;interesse</span></a></li>
+	</ul>
+</nav>
+
 <main class="main" role="main">	
 	
-	<header class="home--header is_opaque">
+	<header id="home--header" class="home--header is_opaque">
 		<div class="wrapper wrapper-fullwidth">
 			<div class="home--headhero">
 				
-			<h1>INFORMASJONSMØTE ONSDAG 12/11 KL. 19.00</h1>
-			<h2>Vi ønsker velkommen til informasjonsmøte om dette spennende prosjektet Onsdag 12/11 kl. 19.00 i Notar sine lokaler i Grandfjæra 24B.</h2>			
+			<h1></h1>
+			<h2></h2>			
 			</div>
 			<div class="home--headcontact">
 				<div class="home--headcontact--inner is_dark">
@@ -27,7 +38,7 @@
 		$mappages=new WP_Query( 'page_id=39' );
 	?>
 
-	<section class="home--redblock is_dark">
+	<section id="home--redblock" class="home--redblock is_dark">
 		<div class="wrapper wrapper-wide">
 <!-- 			<div class="home--redblock--left">
 				<?php if ( $leftpages->have_posts() ) : $leftpages->the_post(); ?>
@@ -58,7 +69,7 @@
 		</div>
 	</section>
 
-	<section class="home--videoblock is_light">
+	<section id="home--videoblock" class="home--videoblock is_light">
 		<div class="wrapper wrapper-fullwidth">
 			<div class="page-header">
 			  <h2>Jordbærvegen Film<span>Klikk play for å starte filmen</span></h2>
@@ -68,7 +79,7 @@
 		</div>
 	</section>
 
-	<section class="home--chooserblock is_dark">
+	<section id="home--chooserblock" class="home--chooserblock is_dark">
 		<div class="wrapper wrapper-fullwidth">
 			<div class="page-header inverse">
 			  <h2>Finn din bolig<span>Dra musepekeren over bygget for å velge leilighet</span></h2>
@@ -89,7 +100,7 @@
 		);
 		$the_slides = new WP_Query( $sl_args );
 	?>
-	<section class="home--bilderblock is_light">
+	<section id="home--bilderblock" class="home--bilderblock is_light">
 		<div class="wrapper wrapper-fullwidth">
 			<div class="page-header"><h2>Bilder</h2></div>
 				<div class="master-slider ms-skin-default" id="masterslider">
@@ -112,7 +123,7 @@
 		</div>
 	</section>
 
-	<section class="home--mapblock is_light">
+	<section id="home--mapblock" class="home--mapblock is_light">
 		<div class="wrapper wrapper-fullwidth map-wrapper">
 			<div class="home--mapblock--text">
 				<?php if ( $mappages->have_posts() ) : $mappages->the_post(); ?>
