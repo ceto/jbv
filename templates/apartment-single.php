@@ -64,11 +64,18 @@
       <?php $samelist=''; while ($the_sameaps->have_posts()) : $the_sameaps->the_post(); ?>
         <?php $samelist .= '<a href="'.get_permalink().'">'.get_the_title().'</a> | '; ?>
       <?php endwhile; $samelist=substr($samelist, 0, -3); ?>
+      <?php wp_reset_query(); ?>
       <div class="apartment-details--right--inner-red">
         <div class="holdit">
 
 
           <div class="apartment-facts">
+          <?php if ( get_post_meta( $post->ID, '_meta_3dpano', true )) : ?>
+            <a class="popup-3d apartment-3dlink" href="<?php echo get_post_meta( $post->ID, '_meta_3dpano', true ); ?>">
+              <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/360.png" alt="View 3D"><br>
+             Klikk for å se 3D 
+            </a>
+          <?php endif; ?>
             <p class="data-item"><span>Navn</span> <?php the_title(); ?></p>
             <p class="data-item"><span>Etasje</span> <?php echo get_post_meta( $post->ID, '_meta_floor', true ); ?></p>
             <p class="data-item"><span>BRA</span> <?php echo get_post_meta( $post->ID, '_meta_omr', true ); ?> m<sup>2</sup></p>

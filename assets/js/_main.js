@@ -143,6 +143,21 @@ jQuery(document).ready(function() {
   });
 
 
+  $('.popup-3d').magnificPopup({
+    disableOn: 480,
+    type: 'iframe',
+    mainClass: 'mfp-with-zoom',
+    removalDelay: 160,
+    preloader: false,
+
+    fixedContentPos: true,
+    zoom: {
+      enabled: true,
+      duration: 300 // don't foget to change the duration also in CSS
+    }
+  });
+
+
   $('.home--videoblock').fitVids();
 
 

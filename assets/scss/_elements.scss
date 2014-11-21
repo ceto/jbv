@@ -29,6 +29,9 @@
 		//letter-spacing: 0.025em;
 		.datarow--cell{
 			padding:1em 0.666em;
+			&.de {
+				padding-left:19px;
+			}
 		}
 	}
 }
@@ -46,12 +49,33 @@
 	}
 
 	.datarow--cell {
+		position: relative;
 		display:table-cell;
 		padding:0.5em 0.125em;
 		text-align:center;
 		vertical-align: middle;
 		@include bp($s2){
 			padding:0.5em 0.666em;
+		}
+		&.de {
+			//text-align: right;
+			padding-left:19px;
+		}
+		&.no3d{
+			//padding-left: 18px;
+		}
+	}
+
+	.tiny3d{
+		position: absolute;
+		left:5%;
+		top:12%;
+		cursor: zoom-in;
+		display: inline-block;
+		//float:left;
+		//display: block;
+		.tooltip &{
+			left:82%;
 		}
 	}
 
@@ -71,4 +95,12 @@
 		display: block;
 		background-color: $gray_main;	
 	}
+}
+
+
+.full_iframe {
+	width:100%;
+	min-height: 75vh;
+	overflow: hidden; 
+
 }

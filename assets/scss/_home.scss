@@ -188,11 +188,16 @@
 	.featimage-row {
 		a {
 			display: block;
-			padding:4px;
+			//padding:4px;
+			border:4px solid #fff;
 			background-color: #fff;
 			margin:24px 12px;
+			overflow: hidden;
+			backface-visibility:hidden;
 			&:hover, &:focus {
-
+				img {
+					transform:scale(1.1);
+				}
 			}
 			@include bp($s1){
 				float:left;
@@ -207,6 +212,8 @@
 
 			img {
 				display: block;
+				transition: transform .3s ease;
+				//margin:4px;
 			}
 		}
 	}

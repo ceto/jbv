@@ -27,6 +27,7 @@
 		
 		.holdit {
 			@include clearfix();
+			position: relative;
 			padding:36px 12px;
 			@include bp($s1){
 				padding:24px;
@@ -55,7 +56,30 @@
 			color:#fff;
 			font-family: $sans-serif;
 		}
+		
+		.apartment-3dlink {
+			position: absolute;
+			right:0px;
+			top:0px;
+			width:140px;
+			cursor:zoom-in;
+			transition: transform .2s ease-in;
+			color:#fff;
+			text-align: center;
+			//text-transform: uppercase;
+			font-family: $panefresco;
+			font-weight: 700;
+			font-size: 1.2em;
 
+			&:hover, &:focus {
+				transform:scale(1.1);
+				text-decoration: none;
+			}
+
+			img {
+				width:90%;
+			}
+		}
 
 
 
@@ -96,6 +120,7 @@
 
 
 .apartment-facts {
+	position: relative;
 }
 	.data-item {
 		font-family: $panefresco;

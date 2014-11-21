@@ -198,6 +198,12 @@ function jbv_apartment_meta( array $meta_boxes ) {
     ),
 
     array(
+        'name' => '3D view url',
+        'desc' => 'Add 3D panorama url if exists',
+        'id'   => $prefix . '3dpano',
+        'type' => 'text',
+    ),
+    array(
         'name' => 'SVG Definition',
         'desc' => 'Experimental! Do not change it!',
         'id'   => $prefix . 'svgdata',

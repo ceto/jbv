@@ -26,7 +26,7 @@
 	
 	<div class="datatable datatable-apartments">
 	  <p class="datarow datatable--head">
-			<span class="datarow--cell">Navn</span>
+			<span class="datarow--cell de">Navn</span>
 			<span class="datarow--cell">Etasje</span>
 			<span class="datarow--cell">BRA</span>
 			<span class="datarow--cell">P-rom</span>

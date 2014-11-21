@@ -3621,18 +3621,22 @@ input[type="checkbox"]#nav-toggle {
     /* line 30, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
     .datarow.datatable--head .datarow--cell {
       padding: 1em 0.666em; }
+      /* line 32, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+      .datarow.datatable--head .datarow--cell.de {
+        padding-left: 19px; }
 
-/* line 37, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+/* line 40, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
 .datarow--link {
   display: table-row;
   color: #fff; }
-  /* line 42, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  /* line 45, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
   .datarow--link.active, .datarow--link:hover, .datarow--link:focus {
     outline: 1px solid #fff;
     text-decoration: none; }
 
-/* line 48, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+/* line 51, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
 .datarow--cell {
+  position: relative;
   display: table-cell;
   padding: 0.5em 0.125em;
   text-align: center;
@@ -3640,8 +3644,23 @@ input[type="checkbox"]#nav-toggle {
   @media only screen and (min-width: 768px) {
     .datarow--cell {
       padding: 0.5em 0.666em; } }
+  /* line 60, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  .datarow--cell.de {
+    padding-left: 19px; }
 
-/* line 59, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+/* line 69, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+.tiny3d {
+  position: absolute;
+  left: 5%;
+  top: 12%;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  display: inline-block; }
+  /* line 77, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  .tooltip .tiny3d {
+    left: 82%; }
+
+/* line 83, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
 .pdf-viewer {
   width: 100%;
   min-height: 300px;
@@ -3650,13 +3669,19 @@ input[type="checkbox"]#nav-toggle {
     .pdf-viewer {
       min-height: 900px;
       height: 900px; } }
-  /* line 67, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  /* line 91, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
   .pdf-viewer p {
     padding: 1em; }
-  /* line 70, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  /* line 94, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
   .pdf-viewer object {
     display: block;
     background-color: #333232; }
+
+/* line 101, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+.full_iframe {
+  width: 100%;
+  min-height: 75vh;
+  overflow: hidden; }
 
 /* line 1, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--header {
@@ -3821,9 +3846,18 @@ input[type="checkbox"]#nav-toggle {
 /* line 189, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .featimage-row a {
   display: block;
-  padding: 4px;
+  border: 4px solid #fff;
   background-color: #fff;
-  margin: 24px 12px; }
+  margin: 24px 12px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+  /* line 198, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  .featimage-row a:hover img, .featimage-row a:focus img {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+         -o-transform: scale(1.1);
+            transform: scale(1.1); }
   @media only screen and (min-width: 480px) {
     .featimage-row a {
       float: left;
@@ -3834,17 +3868,20 @@ input[type="checkbox"]#nav-toggle {
       float: left;
       width: 22%;
       margin: 0 1.5% 0; } }
-  /* line 208, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 213, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .featimage-row a img {
-    display: block; }
+    display: block;
+    -webkit-transition: -webkit-transform 0.3s ease;
+         -o-transition: -o-transform 0.3s ease;
+            transition: transform 0.3s ease; }
 
-/* line 217, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 224, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--mapblock {
   font-family: 'Open Sans', serif;
   border-bottom: 5px solid #A71D3E;
   background-color: #fff; }
 
-/* line 223, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 230, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 #map-canvas {
   margin: 0;
   padding: 0;
@@ -3866,7 +3903,7 @@ input[type="checkbox"]#nav-toggle {
     #map-canvas {
       left: 25%; } }
 
-/* line 251, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 258, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--mapblock--text {
   position: relative;
   z-index: 1;
@@ -3888,7 +3925,7 @@ input[type="checkbox"]#nav-toggle {
     .home--mapblock--text {
       width: 25%;
       padding: 3em 48px 5em; } }
-  /* line 273, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 280, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--mapblock--text h2 {
     text-transform: uppercase;
     color: #A71D3E;
@@ -3896,15 +3933,15 @@ input[type="checkbox"]#nav-toggle {
     margin-top: 3em;
     margin-bottom: 1em; }
 
-/* line 283, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 290, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--bilderblock {
   color: #A71D3E; }
 
-/* line 290, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+/* line 297, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
 .home--chooserblock {
   color: #fff;
   background-color: #A71D3E; }
-  /* line 296, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
+  /* line 303, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/home */
   .home--chooserblock .detailswrapper .wrapper:last-of-type {
     padding-bottom: 4em; }
 
@@ -5346,6 +5383,7 @@ img.mfp-img {
 
 /* line 28, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
 .holdit {
+  position: relative;
   padding: 36px 12px; }
   /* line 11, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/mixins */
   .holdit:before, .holdit:after {
@@ -5371,13 +5409,40 @@ img.mfp-img {
     .holdit.nohorizpadding {
       padding: 60px 0 12px; } }
 
-/* line 53, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+/* line 54, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
 .apartment-details--right--inner-red {
   background-color: #A71D3E;
   color: #fff;
   font-family: 'Open Sans', serif; }
 
-/* line 62, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+/* line 60, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+.apartment-3dlink {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 140px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+       -o-transition: -o-transform 0.2s ease-in;
+          transition: transform 0.2s ease-in;
+  color: #fff;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em; }
+  /* line 74, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  .apartment-3dlink:hover, .apartment-3dlink:focus {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+         -o-transform: scale(1.1);
+            transform: scale(1.1);
+    text-decoration: none; }
+  /* line 79, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  .apartment-3dlink img {
+    width: 90%; }
+
+/* line 86, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
 .apartment-3dfloormap {
   margin: 2em 0;
   padding: 0 12px 0 12px; }
@@ -5390,13 +5455,13 @@ img.mfp-img {
   @media only screen and (min-width: 1280px) {
     .apartment-3dfloormap {
       padding: 0 48px 0 48px; } }
-  /* line 74, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  /* line 98, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
   .apartment-3dfloormap img {
     width: 100%;
     max-width: 640px;
     max-height: 980px; }
 
-/* line 81, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+/* line 105, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
 .apartment-2dfloormap, .apartment-schema {
   text-align: center;
   margin: 2em 0;
@@ -5409,7 +5474,11 @@ img.mfp-img {
     .apartment-2dfloormap img, .apartment-schema img {
       width: 100%; } }
 
-/* line 100, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+/* line 122, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+.apartment-facts {
+  position: relative; }
+
+/* line 125, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
 .data-item {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 700;
@@ -5417,7 +5486,7 @@ img.mfp-img {
   font-size: 20px;
   line-height: 1;
   margin: 0.75em 0; }
-  /* line 107, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  /* line 132, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
   .data-item span {
     font-family: 'Open Sans', serif;
     font-weight: 400;
@@ -5425,41 +5494,41 @@ img.mfp-img {
     line-height: 20px;
     min-width: 7.5em;
     display: inline-block; }
-  /* line 115, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  /* line 140, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
   .data-item small {
     font-family: 'Open Sans', serif;
     font-weight: 400;
     font-size: 14px; }
-  /* line 121, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  /* line 146, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
   .data-item:first-child {
     margin-top: 0; }
-  /* line 125, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  /* line 150, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
   .data-item a {
     color: #fff;
     text-decoration: none; }
-    /* line 128, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+    /* line 153, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
     .data-item a:hover, .data-item a:focus {
       color: #4AB84A; }
-  /* line 133, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  /* line 158, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
   .tooltip .data-item {
     text-align: left;
     font-size: 14px;
     margin: 0.25em 0; }
-    /* line 137, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+    /* line 162, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
     .tooltip .data-item span {
       font-size: 12px;
       min-width: 5.5em; }
-    /* line 142, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+    /* line 167, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
     .tooltip .data-item:first-child {
       font-weight: 700;
       font-size: 1.5em;
       margin: 0.25em 0 0.5em; }
 
-/* line 151, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+/* line 176, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
 .apartment-discl {
   margin-top: 3em;
   max-width: 480px; }
-  /* line 155, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
+  /* line 180, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/apartment */
   .apartment-discl .btn {
     margin-top: 1.5em; }
 
@@ -5514,9 +5583,10 @@ img.mfp-img {
   text-align: center;
   text-decoration: none;
   background-color: #A71D3E;
-  border-radius: 0; }
+  border-radius: 0;
+  position: relative; }
 
-/* line 37, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 38, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip-arrow {
   position: absolute;
   width: 0;
@@ -5524,53 +5594,53 @@ img.mfp-img {
   border-color: transparent;
   border-style: solid; }
 
-/* line 45, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 46, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.top .tooltip-arrow {
   bottom: 0;
   left: 50%;
   margin-left: -6px;
   border-width: 6px 6px 0;
   border-top-color: #A71D3E; }
-/* line 52, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 53, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.top-left .tooltip-arrow {
   bottom: 0;
   left: 6px;
   border-width: 6px 6px 0;
   border-top-color: #A71D3E; }
-/* line 58, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 59, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.top-right .tooltip-arrow {
   bottom: 0;
   right: 6px;
   border-width: 6px 6px 0;
   border-top-color: #A71D3E; }
-/* line 64, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 65, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.right .tooltip-arrow {
   top: 50%;
   left: 0;
   margin-top: -6px;
   border-width: 6px 6px 6px 0;
   border-right-color: #A71D3E; }
-/* line 71, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 72, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.left .tooltip-arrow {
   top: 50%;
   right: 0;
   margin-top: -6px;
   border-width: 6px 0 6px 6px;
   border-left-color: #A71D3E; }
-/* line 78, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 79, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.bottom .tooltip-arrow {
   top: 0;
   left: 50%;
   margin-left: -6px;
   border-width: 0 6px 6px;
   border-bottom-color: #A71D3E; }
-/* line 85, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 86, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.bottom-left .tooltip-arrow {
   top: 0;
   left: 6px;
   border-width: 0 6px 6px;
   border-bottom-color: #A71D3E; }
-/* line 91, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
+/* line 92, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/tooltip */
 .tooltip.bottom-right .tooltip-arrow {
   top: 0;
   right: 6px;
