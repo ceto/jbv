@@ -1,5 +1,24 @@
 <?php global $building; ?>
 <?php 
+		$friap_args = array(
+			'post_type'   => array('apartment'),
+			'ignore_sticky_posts' => true,
+			'posts_per_page'         => -1,
+			'orderby' => 'title',
+			'order' => 'ASC',
+			'meta_key' => '_meta_state',
+			'meta_value' => 'fri',
+			'tax_query' => array(
+				array(
+					'taxonomy' => 'object',
+					'field'    => 'id',
+					'terms'    => array( $building->term_id ),
+				),
+			),
+		);
+		$the_friaps = new WP_Query( $friap_args );
+?>
+<?php 
 		$ap_args = array(
 			'post_type'   => array('apartment'),
 			'ignore_sticky_posts' => true,
@@ -18,10 +37,11 @@
 		);
 		$the_aps = new WP_Query( $ap_args );
 ?>
+
 <div class="wrapper wrapper-narrow is_dark">
 	<div class="theader">
 		<h3><?php echo $building->name; ?></h3>
-		<p><?php echo $the_aps->found_posts; ?> ledig / <?php echo $building->count; ?> hjem</p>
+		<p><?php echo $the_friaps->found_posts; ?> ledig / <?php echo $the_aps->found_posts; ?> hjem</p>
 	</div>
 	
 	<div class="datatable datatable-apartments">

@@ -11847,7 +11847,7 @@ function redraw_canvas() {
       {
        
         fill: (menuitem.attr('data-state')==='fri')?'#4AB84A':(menuitem.attr('data-state')==='utsolgt')?'#A71D3E':'#FF9900',
-        opacity: 0,
+        opacity: (menuitem.attr('data-state')!=='fri')?0.5:0,
         stroke: 'transparent',
         href:$(this).attr('data-url'),
         //title: text
@@ -11871,14 +11871,14 @@ function redraw_canvas() {
       function(event){
         items[index].attr(
         {
-          opacity: 0.5,
+          opacity: (menuitem.attr('data-state')!=='fri')?0.75:0.5,
         });
         menuitem.toggleClass('active');
       },
       function(){
         items[index].attr(
         {
-          opacity: 0,
+          opacity: (menuitem.attr('data-state')!=='fri')?0.5:0,
         });
         menuitem.toggleClass('active');
       }
@@ -11888,13 +11888,13 @@ function redraw_canvas() {
       function(){
         items[index].attr(
         {
-          opacity: 0.5,
+          opacity: (menuitem.attr('data-state')!=='fri')?0.75:0.5,
         });
       },
       function(){
           items[index].attr(
           {
-            opacity: 0,
+            opacity: (menuitem.attr('data-state')!=='fri')?0.5:0,
           });
       }
     );

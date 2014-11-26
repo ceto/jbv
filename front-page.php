@@ -14,9 +14,9 @@
 	<header id="home--header" class="home--header is_opaque">
 		<div class="wrapper wrapper-fullwidth">
 			<div class="home--headhero">
-				
-			<h1></h1>
-			<h2></h2>			
+				<div class="home--headhero--text">
+					<?php the_content(); ?>
+				</div>		
 			</div>
 			<div class="home--headcontact">
 				<div class="home--headcontact--inner is_dark">

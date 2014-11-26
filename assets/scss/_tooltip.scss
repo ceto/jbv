@@ -25,6 +25,7 @@
 // Wrapper for the tooltip content
 .tooltip-inner {
   max-width: $s0;
+  min-width: 180px;
   padding: 1em 1.333em;
   color: #fff;
   text-align: center;
