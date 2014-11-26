@@ -79,8 +79,10 @@
 	  text-align: center;
 	  color:#fff;
 	  text-shadow:0 0 2px $gray-main;
-	  font-size: 1.5em;
-	  padding:1em;
+		padding:1em;
+	  @include bp($s2) {
+			font-size: 1.5em;
+		}
 
 
 	  h1 {			
