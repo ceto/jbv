@@ -54,6 +54,7 @@
 		padding:0.5em 0.125em;
 		text-align:center;
 		vertical-align: middle;
+		height: 2.75em;
 		@include bp($s2){
 			padding:0.5em 0.666em;
 		}
@@ -64,18 +65,37 @@
 		&.no3d{
 			//padding-left: 18px;
 		}
+		.ministate{
+			font-size: 0.75em;
+			display: block;
+			font-family: $panefresco;
+			text-transform: uppercase;
+			font-weight: 700;
+		}	
+		&.statepris {
+		}
+		&.stateold {
+			display: none;
+		}	
 	}
 
+	.tooltip .ministate {
+		display: none;
+	}
 	.tiny3d{
 		position: absolute;
-		left:5%;
-		top:12%;
+		left:6%;
+		top:16%;
 		cursor: zoom-in;
 		display: inline-block;
+		width:1.875em;
+		height:auto;
 		//float:left;
 		//display: block;
 		.tooltip &{
-			left:82%;
+			left:78%;
+			top:0.875em;
+			width:1.25em;
 		}
 	}
 

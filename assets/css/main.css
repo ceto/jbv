@@ -3640,27 +3640,46 @@ input[type="checkbox"]#nav-toggle {
   display: table-cell;
   padding: 0.5em 0.125em;
   text-align: center;
-  vertical-align: middle; }
+  vertical-align: middle;
+  height: 2.75em; }
   @media only screen and (min-width: 768px) {
     .datarow--cell {
       padding: 0.5em 0.666em; } }
-  /* line 60, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  /* line 61, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
   .datarow--cell.de {
     padding-left: 19px; }
+  /* line 68, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  .datarow--cell .ministate {
+    font-size: 0.75em;
+    display: block;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700; }
+  /* line 77, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  .datarow--cell.stateold {
+    display: none; }
 
-/* line 69, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+/* line 82, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+.tooltip .ministate {
+  display: none; }
+
+/* line 85, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
 .tiny3d {
   position: absolute;
-  left: 5%;
-  top: 12%;
+  left: 6%;
+  top: 16%;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
-  display: inline-block; }
-  /* line 77, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  display: inline-block;
+  width: 1.875em;
+  height: auto; }
+  /* line 95, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
   .tooltip .tiny3d {
-    left: 82%; }
+    left: 78%;
+    top: 0.875em;
+    width: 1.25em; }
 
-/* line 83, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+/* line 103, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
 .pdf-viewer {
   width: 100%;
   min-height: 300px;
@@ -3669,15 +3688,15 @@ input[type="checkbox"]#nav-toggle {
     .pdf-viewer {
       min-height: 900px;
       height: 900px; } }
-  /* line 91, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  /* line 111, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
   .pdf-viewer p {
     padding: 1em; }
-  /* line 94, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+  /* line 114, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
   .pdf-viewer object {
     display: block;
     background-color: #333232; }
 
-/* line 101, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
+/* line 121, /Users/szabogabi/Documents/htdocs/jbv/wp-content/themes/jbv/assets/scss/elements */
 .full_iframe {
   width: 100%;
   min-height: 75vh;

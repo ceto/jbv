@@ -14,7 +14,7 @@
 
 		<span class="datarow--cell <?php echo get_post_meta( $post->ID, '_meta_3dpano', true )?'has3d de':'no3d de'; ?>">
 				<?php if ( get_post_meta( $post->ID, '_meta_3dpano', true )) : ?>
-					<img class="tiny3d popup-3d" href="<?php echo get_post_meta( $post->ID, '_meta_3dpano', true ); ?>" src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/360tiny.png" alt="View 3D">
+					<img class="tiny3d popup-3d" href="<?php echo get_post_meta( $post->ID, '_meta_3dpano', true ); ?>" src="<?php echo get_stylesheet_directory_uri() ?>/assets/img/360small.png" alt="View 3D">
 				<?php endif; ?>
 				<?php echo get_the_title($post->ID); ?>
 		</span>
@@ -31,11 +31,16 @@
 			<?php echo get_post_meta( $post->ID, '_meta_prom', true ); ?> m<sup>2</sup>
 		</span>
 		
-		<span class="datarow--cell">
-			<?php echo number_format(get_post_meta( $post->ID, '_meta_pris', true ), 0, ',', ' '); ?> NOK
+		<span class="datarow--cell statepris">
+			<?php if (get_post_meta( $post->ID, '_meta_state', true )!=='fri'): ?>
+				<span class="ministate"><?php echo st_conv(get_post_meta( $post->ID, '_meta_state', true )); ?></span>
+			<?php endif; ?>
+			<?php if (get_post_meta( $post->ID, '_meta_state', true )!=='utsolgt'): ?>
+				<?php echo number_format(get_post_meta( $post->ID, '_meta_pris', true ), 0, ',', ' '); ?> NOK
+			<?php endif; ?>
 		</span>
 
-		<span class="datarow--cell">
+		<span class="datarow--cell stateold">
 				 <?php echo st_conv(get_post_meta( $post->ID, '_meta_state', true )); ?>
 		</span>
 	</a>

@@ -30,8 +30,8 @@
 			<span class="datarow--cell">Etasje</span>
 			<span class="datarow--cell">BRA</span>
 			<span class="datarow--cell">P-rom</span>
-			<span class="datarow--cell">Pris</span>
-			<span class="datarow--cell">Status</span>
+			<span class="datarow--cell">Pris / Status</span>
+			<span class="datarow--cell stateold">Status</span>
 	  </p>
 	  <?php while ($the_aps->have_posts()) : $the_aps->the_post(); ?>
 	    <?php get_template_part('templates/apartment-datarow'); ?>
